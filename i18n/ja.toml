@@ -1,0 +1,201 @@
+# Translations for Philippine English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Format
+[date_format]
+  other = "January 2, 2006"
+
+# Sidebar
+[recent_posts]
+  other = "最近の投稿"
+[see_more]
+  other = "続きを見る"
+[learn_more]
+  other = "もっと詳しく知る"
+[attribution]
+  other = "テーマ: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' rel='noopener external nofollow'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' rel='noopener external nofollow'>HTML5 UP port</a> | 搭載 <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' rel='noopener external nofollow'>Hugo</a>"
+
+# Sections
+[contact_replies]
+  one = "通常1時間以内に返信します。"
+  other = "通常{{ .Count }}時間以内に返信します。"
+[blog]
+  other = "ブログ"
+[categories]
+  one = "カテゴリー"
+  other = "カテゴリ"
+[tags]
+  one = "タグ"
+  other = "タグ"
+[next_page]
+  other = "次のページ"
+[previous_page]
+  other = "前のページ"
+[posts]
+  one = "ブログ投稿"
+  other = "ブログ投稿"
+[series]
+  one = "連続"
+  other = "連続"
+
+# Post
+[reading_time]
+  one = "1分間の読み取り"
+  other = "{{.Count}}分間の読み取り"
+[read_more]
+  other = "続きを読む"
+[share_post]
+  other = "この投稿を共有する"
+[check_out]
+  other = "によってこの投稿をチェックしてください"
+[say_something]
+  other = "何か言って"
+[comments]
+  other = "コメント"
+[nothing_yet]
+  other = "まだ何もありません。"
+[reply]
+  other = "応答"
+[error_msg]
+  other = "申し訳ありませんが、送信にエラーがありました。 必須フィールドがすべて入力されていることを確認して、再試行してください。"
+[success_msg]
+  other = "ご意見ありがとうございます！ 承認されると、サイトに表示されます。"
+
+# Form
+[form_name]
+  other = "あなたの名前"
+[form_email]
+  other = "あなたのメール"
+[form_website]
+  other = "あなたのウェブサイト"
+[form_subject]
+  other = "あなたの主題"
+[form_body]
+  other = "あなたのメッセージ"
+[reset]
+  other = "リセット"
+[submitted]
+  other = "提出済み"
+[submit]
+  other = "参加する"
+
+# 404
+[404_pagenotfound]
+  other = "ページが見つかりません"
+[404_sorry]
+  other = "申し訳ありませんが、表示しようとしたページは存在しません。"
+[404_back]
+  other = "戻る"
+
+# Yuki
+[NowPlaying]
+other = "再生中"
+
+# Copyleft
+[copyleft]
+other = "コピーレフト"
+
+[BestViewedInBGN]
+other = "ベストビューイン"
+
+[BestViewedInEND]
+other = "ブラウザ。"
+
+[home]
+other = "ホーム"
+
+[about]
+other = "私について"
+
+[terms]
+other = "利用規約"
+
+[privacy]
+other = "個人情報保護方針"
+
+[legal]
+other = "法的通知"
+
+[disclosure]
+other = "開示"
+
+[contact]
+other = "私に連絡して"
+
+[ContentOnBGN]
+other = "のコンテンツ"
+
+[ContentOnEND]
+other = " 特に指定しない限り。"
+
+[PermissionsBeyondScope]
+other = "このライセンスの範囲を超える許可は、次のURLで入手できる場合があります"
+
+[FreeHostingBy]
+other ="による無料の250 GBホスティング"
+
+[GeckoBased]
+other = "Geckoベース"
+
+[GoannaBased]
+other = "Goannaベース"
+
+# Global
+[translations]
+  other = "翻訳"
+
+[postAvailable]
+  other = "でも利用可能"
+
+[featuredposts]
+  other = "おすすめの投稿"
+
+[recentposts]
+  other = "最近の投稿"
+
+# layouts/partials/footer.html
+[poweredby]
+  other = "搭載"
+
+[themeby]
+  other = "テーマ"
+
+# punctuations
+[punctuation_fullstop]
+  other = "。"
+[punctuation_pause]
+  other = "、"
+
+# words
+[word_is]
+  other = "です"
+[word_has]
+  other = "持っている"
+[word_to]
+  other = "に"
+[word_coverimage]
+  other = "・ 表紙画像："
+[word_countryname]
+  other = "フィリピン"
+
+# attribution and license
+[attribution_by]
+  other = "沿って"
+[attribution_licensedunder]
+  other = "の下で認可された"
+[attribution_cc0_extent]
+  other = "法律の下で可能な範囲で"
+[attribution_cc0_waived]
+  other = "すべての著作権および関連する権利または隣接権を放棄しました"
+[attribution_cc0_publishedfrom]
+  other = "この作品はから公開されています"
+[attribution_publicdomain]
+  other = "既知の著作権制限なし"
+[attribution_allrightsreserved]
+  other = "この画像および/またはスクリーンショットに表示されている作品は著作権で保護されています"
+[attribution_allrightsreservedcover]
+  other = "この記事で使用されている表紙の画像は著作権で保護されています"
+[attribution_ccbysa4]
+  other = "クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス"
+[quote_src]
+  other = "、"             # add a space before if using a word

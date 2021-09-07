@@ -1,0 +1,14 @@
+<menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="{{ .Language.Params.languagecodehtml }}" class="nav link active" title="{{ .Site.Language.LanguageName }}">{{ .Site.Language.Params.languageflag }} ({{ .Site.Language.LanguageName }})</a>
+  {{ if .IsTranslated -}}
+    {{ range .Translations }}
+      <a href="{{ .Permalink }}" lang="{{ .Language.Params.languagecodehtml }}" class="nav link" title="{{ .Language.Params.LanguageName }}">{{ .Language.Params.languageflag }} ({{ .Language.Params.LanguageName }})</a>
+    {{ end }}
+  {{ else }}
+    {{ range .Site.Languages }}
+      {{ if not (eq .Lang $.Site.Language.Lang) }}
+        <span class="nav no-lang link" title="{{ .Params.LanguageName }}">{{ .Params.languageflag }} ({{ .Params.LanguageName }})</span>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</menu>

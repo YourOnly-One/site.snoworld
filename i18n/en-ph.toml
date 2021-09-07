@@ -1,0 +1,201 @@
+# Translations for Philippine English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# Format
+[date_format]
+  other = "January 2, 2006"
+
+# Sidebar
+[recent_posts]
+  other = "Recent Posts"
+[see_more]
+  other = "See More"
+[learn_more]
+  other = "Learn More"
+[attribution]
+  other = "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' rel='noopener external nofollow'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' rel='noopener external nofollow'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' rel='noopener external nofollow'>Hugo</a>"
+
+# Sections
+[contact_replies]
+  one = "Replies typically within 1 hour."
+  other = "Replies typically within {{ .Count }} hours."
+[blog]
+  other = "Blog"
+[categories]
+  one = "Category"
+  other = "Categories"
+[tags]
+  one = "Tag"
+  other = "Tags"
+[next_page]
+  other = "Next Page"
+[previous_page]
+  other = "Previous Page"
+[posts]
+  one = "Post"
+  other = "Posts"
+[series]
+  one = "Series"
+  other = "Series"
+
+# Post
+[reading_time]
+  one = "1-Minute Read"
+  other = "{{ .Count }}-Minute Read"
+[read_more]
+  other = "Read More"
+[share_post]
+  other = "Share This Post"
+[check_out]
+  other = "Check out this post by"
+[say_something]
+  other = "Say Something"
+[comments]
+  other = "Comments"
+[nothing_yet]
+  other = "Nothing yet."
+[reply]
+  other = "Reply"
+[error_msg]
+  other = "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
+[success_msg]
+  other = "Thanks for your comment! It will be shown on the site once it has been approved."
+
+# Form
+[form_name]
+  other = "Your Name"
+[form_email]
+  other = "Your Email"
+[form_website]
+  other = "Your Website"
+[form_subject]
+  other = "Your Subject"
+[form_body]
+  other = "Your Message"
+[reset]
+  other = "Reset"
+[submitted]
+  other = "Submitted"
+[submit]
+  other = "Submit"
+
+# 404
+[404_pagenotfound]
+  other = "Page Not Found"
+[404_sorry]
+  other = "Sorry, but the page you were trying to view does not exist."
+[404_back]
+  other = "Go Back"
+
+# Yuki
+[NowPlaying]
+other = "Now Playing"
+
+# Copyleft
+[copyleft]
+other = "Copyleft"
+
+[BestViewedInBGN]
+other = "Best viewed in"
+
+[BestViewedInEND]
+other = "browsers."
+
+[home]
+other = "Home"
+
+[about]
+other = "About Us"
+
+[terms]
+other = "Terms of Service"
+
+[privacy]
+other = "Privacy Policy"
+
+[legal]
+other = "Legal Notice"
+
+[disclosure]
+other = "Disclosure"
+
+[contact]
+other = "Contact Us"
+
+[ContentOnBGN]
+other = "Content on"
+
+[ContentOnEND]
+other = "unless otherwise specified."
+
+[PermissionsBeyondScope]
+other = "Permissions beyond the scope of this license may be available at"
+
+[FreeHostingBy]
+other ="Free 250 GB hosting by"
+
+[GeckoBased]
+other = " Gecko-based"
+
+[GoannaBased]
+other = " Goanna-based"
+
+# Global
+[translations]
+  other = "Translations"
+
+[postAvailable]
+  other = "Also available in"
+
+[featuredposts]
+  other = "Featured Posts"
+
+[recentposts]
+  other = "Recent Posts"
+
+# layouts/partials/footer.html
+[poweredby]
+  other = "Powered by"
+
+[themeby]
+  other = "Theme by"
+
+# punctuations
+[punctuation_fullstop]
+  other = "."
+[punctuation_pause]
+  other = ","
+
+# words
+[word_is]
+  other = "is"
+[word_has]
+  other = "has"
+[word_to]
+  other = "to"
+[word_coverimage]
+  other = "・ Cover image:"
+[word_countryname]
+  other = "the Philippines"
+
+# attribution and license
+[attribution_by]
+  other = "by"
+[attribution_licensedunder]
+  other = "licensed under"
+[attribution_cc0_extent]
+  other = "To the extent possible under law"
+[attribution_cc0_waived]
+  other = "waived all copyright and related or neighbouring rights"
+[attribution_cc0_publishedfrom]
+  other = "This work is published from"
+[attribution_publicdomain]
+  other = "free of known copyright restrictions"
+[attribution_allrightsreserved]
+  other = "This image and/or the work shown in the screengrab is Copyrighted"
+[attribution_allrightsreservedcover]
+  other = "The cover image used in this article is Copyrighted"
+[attribution_ccbysa4]
+  other = "Creative Commons Attribution-ShareAlike 4.0 International"
+[quote_src]
+  other = ","             # add a space before if using a word
