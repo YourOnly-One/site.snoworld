@@ -1,15 +1,15 @@
-# Translations for Philippine English
+# Translations for Hangugeo (Korean)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # Format
 [date_format]
-  other = "January 2, 2006"
+  other = "2006-01-02"
 
 # Sidebar
 [recent_posts]
-  other = "최근 게시물"
+  other = "최신 글"
 [see_more]
-  other = "더보기"
+  other = "더 보기"
 [learn_more]
   other = "더 알아보기"
 [attribution]
@@ -17,10 +17,7 @@
 
 # Sections
 [contact_replies]
-  one = "일반적으로 1 시간 이내에 회신합니다."
-  other = "일반적으로 {{.Count}} 시간 이내에 회신합니다."
-[blog]
-  other = "블로그"
+  other = "대체로 {{ .Count }}시간이내에 답신을 드리고 있습니다."
 [categories]
   one = "카테고리"
   other = "카테고리"
@@ -31,39 +28,32 @@
   other = "다음 페이지"
 [previous_page]
   other = "이전 페이지"
-[posts]
-  one = "블로그 포스트"
-  other = "블로그 게시물"
-[series]
-  one = "시리즈"
-  other = "시리즈"
 
 # Post
 [reading_time]
-  one = "1 분 읽기"
-  other = "{{.Count}}-분 읽기"
+  other = "{{ .Count }}분 소요"
 [read_more]
-  other = "더 읽어보기"
+  other = "더 읽기"
 [share_post]
-  other = "이 게시물 공유"
+  other = "이 글을 공유하기"
 [check_out]
-  other = "이 게시물을 확인하십시오"
+  other = "이 글을 체크아웃"
 [say_something]
-  other = "말해봐"
+  other = "한마디 해주세요"
 [comments]
   other = "코멘트"
 [nothing_yet]
   other = "아직 없습니다."
 [reply]
-  other = "댓글"
+  other = "답글하기"
 [error_msg]
-  other = "죄송합니다. 제출에 오류가 있습니다. 모든 필수 필드가 완료되었는지 확인하고 다시 시도하십시오."
+  other = "전송 중에 에러가 발생하였습니다. 필수 항목을 전부 입력하였는지 확인한 뒤에 다시 시도해 주십시오."
 [success_msg]
-  other = "귀하의 의견에 감사드립니다! 승인되면 사이트에 표시됩니다."
+  other = "코멘트 감사힙니다! 코멘트는 승인 된 후에 표시됩니다."
 
 # Form
 [form_name]
-  other = "당신의 이름"
+  other = "귀하의 성함"
 [form_email]
   other = "귀하의 이메일"
 [form_website]
@@ -71,131 +61,18 @@
 [form_subject]
   other = "주제"
 [form_body]
-  other = "귀하의 메시지"
+  other = "내용"
 [reset]
   other = "초기화"
 [submitted]
-  other = "제출"
+  other = "전송했습니다."
 [submit]
-  other = "제출"
+  other = "전송"
 
 # 404
 [404_pagenotfound]
-  other = "페이지를 찾을 수 없음"
+  other = "페이지를 찾을 수 없습니다."
 [404_sorry]
-  other = "죄송합니다. 보려고했던 페이지가 존재하지 않습니다."
+  other = "죄송합니다. 보시려는 페이지가 존재하지 않습니다."
 [404_back]
-  other = "돌아 가기"
-
-# Yuki
-[NowPlaying]
-other = "지금 재생 중"
-
-# Copyleft
-[copyleft]
-other = "카피 레프트"
-
-[BestViewedInBGN]
-other = "베스트 뷰"
-
-[BestViewedInEND]
-other = "브라우저."
-
-[home]
-other = "집"
-
-[about]
-other = "나에 대해서"
-
-[terms]
-other = "서비스 약관"
-
-[privacy]
-other = "개인 정보 정책"
-
-[legal]
-other = "법적 고지"
-
-[disclosure]
-other = "폭로"
-
-[contact]
-other = "문의하기"
-
-[ContentOnBGN]
-other = "내용"
-
-[ContentOnEND]
-other = "별도의 규정이없는."
-
-[PermissionsBeyondScope]
-other = "이 라이선스의 범위를 벗어난 권한은 다음에서 사용할 수 있습니다"
-
-[FreeHostingBy]
-other ="무료 250 GB 호스팅"
-
-[GeckoBased]
-other = "Gecko 기반"
-
-[GoannaBased]
-other = "Goanna 기반"
-
-# Global
-[translations]
-  other = "번역"
-
-[postAvailable]
-  other = "또한 사용 가능"
-
-[featuredposts]
-  other = "주요 게시물"
-
-[recentposts]
-  other = "최근 게시물"
-
-# layouts/partials/footer.html
-[poweredby]
-  other = "에 의해 구동"
-
-[themeby]
-  other = "테마별"
-
-# punctuations
-[punctuation_fullstop]
-  other = "."
-[punctuation_pause]
-  other = ","
-
-# words
-[word_is]
-  other = "이다"
-[word_has]
-  other = "있다"
-[word_to]
-  other = "에"
-[word_coverimage]
-  other = "・ 표지 이미지 :"
-[word_countryname]
-  other = "필리핀"
-
-# attribution and license
-[attribution_by]
-  other = "으로"
-[attribution_licensedunder]
-  other = "라이센스"
-[attribution_cc0_extent]
-  other = "법에 따라 가능한 한"
-[attribution_cc0_waived]
-  other = "모든 저작권 및 관련 또는 이웃 권리를 포기했습니다"
-[attribution_cc0_publishedfrom]
-  other = "이 작품은"
-[attribution_publicdomain]
-  other = "알려진 저작권 제한 없음"
-[attribution_allrightsreserved]
-  other = "이 이미지 및 / 또는 스크린 샷에 표시된 저작물은 저작권으로 보호됩니다"
-[attribution_allrightsreservedcover]
-  other = "이 기사에 사용 된 표지 이미지는 저작권으로 보호됩니다"
-[attribution_ccbysa4]
-  other = "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스"
-[quote_src]
-  other = ","             # add a space before if using a word
+  other = "뒤로가기"

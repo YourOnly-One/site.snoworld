@@ -3,7 +3,7 @@
 
 # Format
 [date_format]
-  other = "January 2, 2006"
+  other = "2006-01-02"
 
 # Sidebar
 [recent_posts]
@@ -19,8 +19,6 @@
 [contact_replies]
   one = "Replies typically within 1 hour."
   other = "Replies typically within {{ .Count }} hours."
-[blog]
-  other = "Blog"
 [categories]
   one = "Category"
   other = "Categories"
@@ -31,12 +29,6 @@
   other = "Next Page"
 [previous_page]
   other = "Previous Page"
-[posts]
-  one = "Post"
-  other = "Posts"
-[series]
-  one = "Series"
-  other = "Series"
 
 # Post
 [reading_time]
@@ -86,116 +78,3 @@
   other = "Sorry, but the page you were trying to view does not exist."
 [404_back]
   other = "Go Back"
-
-# Yuki
-[NowPlaying]
-other = "Now Playing"
-
-# Copyleft
-[copyleft]
-other = "Copyleft"
-
-[BestViewedInBGN]
-other = "Best viewed in"
-
-[BestViewedInEND]
-other = "browsers."
-
-[home]
-other = "Home"
-
-[about]
-other = "About Us"
-
-[terms]
-other = "Terms of Service"
-
-[privacy]
-other = "Privacy Policy"
-
-[legal]
-other = "Legal Notice"
-
-[disclosure]
-other = "Disclosure"
-
-[contact]
-other = "Contact Us"
-
-[ContentOnBGN]
-other = "Content on"
-
-[ContentOnEND]
-other = "unless otherwise specified."
-
-[PermissionsBeyondScope]
-other = "Permissions beyond the scope of this license may be available at"
-
-[FreeHostingBy]
-other ="Free 250 GB hosting by"
-
-[GeckoBased]
-other = " Gecko-based"
-
-[GoannaBased]
-other = " Goanna-based"
-
-# Global
-[translations]
-  other = "Translations"
-
-[postAvailable]
-  other = "Also available in"
-
-[featuredposts]
-  other = "Featured Posts"
-
-[recentposts]
-  other = "Recent Posts"
-
-# layouts/partials/footer.html
-[poweredby]
-  other = "Powered by"
-
-[themeby]
-  other = "Theme by"
-
-# punctuations
-[punctuation_fullstop]
-  other = "."
-[punctuation_pause]
-  other = ","
-
-# words
-[word_is]
-  other = "is"
-[word_has]
-  other = "has"
-[word_to]
-  other = "to"
-[word_coverimage]
-  other = "・ Cover image:"
-[word_countryname]
-  other = "the Philippines"
-
-# attribution and license
-[attribution_by]
-  other = "by"
-[attribution_licensedunder]
-  other = "licensed under"
-[attribution_cc0_extent]
-  other = "To the extent possible under law"
-[attribution_cc0_waived]
-  other = "waived all copyright and related or neighbouring rights"
-[attribution_cc0_publishedfrom]
-  other = "This work is published from"
-[attribution_publicdomain]
-  other = "free of known copyright restrictions"
-[attribution_allrightsreserved]
-  other = "This image and/or the work shown in the screengrab is Copyrighted"
-[attribution_allrightsreservedcover]
-  other = "The cover image used in this article is Copyrighted"
-[attribution_ccbysa4]
-  other = "Creative Commons Attribution-ShareAlike 4.0 International"
-[quote_src]
-  other = ","             # add a space before if using a word

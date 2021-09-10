@@ -1,9 +1,9 @@
-# Translations for Philippine English
+# Translations for Nihongo (Japanese)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # Format
 [date_format]
-  other = "January 2, 2006"
+  other = "2006-01-02"
 
 # Sidebar
 [recent_posts]
@@ -17,13 +17,11 @@
 
 # Sections
 [contact_replies]
-  one = "通常1時間以内に返信します。"
-  other = "通常{{ .Count }}時間以内に返信します。"
-[blog]
-  other = "ブログ"
+  one = "通常、1 時間以内に返信します。"
+  other = "通常、{{ .Count }} 時間以内に返信します。"
 [categories]
   one = "カテゴリー"
-  other = "カテゴリ"
+  other = "カテゴリー"
 [tags]
   one = "タグ"
   other = "タグ"
@@ -31,35 +29,29 @@
   other = "次のページ"
 [previous_page]
   other = "前のページ"
-[posts]
-  one = "ブログ投稿"
-  other = "ブログ投稿"
-[series]
-  one = "連続"
-  other = "連続"
 
 # Post
 [reading_time]
-  one = "1分間の読み取り"
-  other = "{{.Count}}分間の読み取り"
+  one = "1 分で読めます"
+  other = "{{ .Count }} 分で読めます"
 [read_more]
   other = "続きを読む"
 [share_post]
-  other = "この投稿を共有する"
+  other = "この投稿をシェアする"
 [check_out]
-  other = "によってこの投稿をチェックしてください"
+  other = "この投稿をチェックする"
 [say_something]
-  other = "何か言って"
+  other = "何か言ってください"
 [comments]
   other = "コメント"
 [nothing_yet]
-  other = "まだ何もありません。"
+  other = "何もありません。"
 [reply]
-  other = "応答"
+  other = "返信する"
 [error_msg]
-  other = "申し訳ありませんが、送信にエラーがありました。 必須フィールドがすべて入力されていることを確認して、再試行してください。"
+  other = "申し訳ありません。送信中にエラーが発生しました。必須入力フィールドがすべて入力されていることを確認して、もう一度やりなおしてください。"
 [success_msg]
-  other = "ご意見ありがとうございます！ 承認されると、サイトに表示されます。"
+  other = "コメントありがとうございます！承認されるとサイトに表示されます。"
 
 # Form
 [form_name]
@@ -75,127 +67,14 @@
 [reset]
   other = "リセット"
 [submitted]
-  other = "提出済み"
+  other = "送信しました"
 [submit]
-  other = "参加する"
+  other = "送信する"
 
 # 404
 [404_pagenotfound]
   other = "ページが見つかりません"
 [404_sorry]
-  other = "申し訳ありませんが、表示しようとしたページは存在しません。"
+  other = "申し訳ありません。表示しようとしていたページは存在しません。"
 [404_back]
   other = "戻る"
-
-# Yuki
-[NowPlaying]
-other = "再生中"
-
-# Copyleft
-[copyleft]
-other = "コピーレフト"
-
-[BestViewedInBGN]
-other = "ベストビューイン"
-
-[BestViewedInEND]
-other = "ブラウザ。"
-
-[home]
-other = "ホーム"
-
-[about]
-other = "私について"
-
-[terms]
-other = "利用規約"
-
-[privacy]
-other = "個人情報保護方針"
-
-[legal]
-other = "法的通知"
-
-[disclosure]
-other = "開示"
-
-[contact]
-other = "私に連絡して"
-
-[ContentOnBGN]
-other = "のコンテンツ"
-
-[ContentOnEND]
-other = " 特に指定しない限り。"
-
-[PermissionsBeyondScope]
-other = "このライセンスの範囲を超える許可は、次のURLで入手できる場合があります"
-
-[FreeHostingBy]
-other ="による無料の250 GBホスティング"
-
-[GeckoBased]
-other = "Geckoベース"
-
-[GoannaBased]
-other = "Goannaベース"
-
-# Global
-[translations]
-  other = "翻訳"
-
-[postAvailable]
-  other = "でも利用可能"
-
-[featuredposts]
-  other = "おすすめの投稿"
-
-[recentposts]
-  other = "最近の投稿"
-
-# layouts/partials/footer.html
-[poweredby]
-  other = "搭載"
-
-[themeby]
-  other = "テーマ"
-
-# punctuations
-[punctuation_fullstop]
-  other = "。"
-[punctuation_pause]
-  other = "、"
-
-# words
-[word_is]
-  other = "です"
-[word_has]
-  other = "持っている"
-[word_to]
-  other = "に"
-[word_coverimage]
-  other = "・ 表紙画像："
-[word_countryname]
-  other = "フィリピン"
-
-# attribution and license
-[attribution_by]
-  other = "沿って"
-[attribution_licensedunder]
-  other = "の下で認可された"
-[attribution_cc0_extent]
-  other = "法律の下で可能な範囲で"
-[attribution_cc0_waived]
-  other = "すべての著作権および関連する権利または隣接権を放棄しました"
-[attribution_cc0_publishedfrom]
-  other = "この作品はから公開されています"
-[attribution_publicdomain]
-  other = "既知の著作権制限なし"
-[attribution_allrightsreserved]
-  other = "この画像および/またはスクリーンショットに表示されている作品は著作権で保護されています"
-[attribution_allrightsreservedcover]
-  other = "この記事で使用されている表紙の画像は著作権で保護されています"
-[attribution_ccbysa4]
-  other = "クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス"
-[quote_src]
-  other = "、"             # add a space before if using a word
