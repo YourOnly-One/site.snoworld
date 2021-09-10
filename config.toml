@@ -515,7 +515,7 @@
     "github.com/YourOnly-One/hugo-structured-data -> /home/yuki/repos/hugo-modules/hugo-structured-data",
     "github.com/YourOnly-One/hugo-shortcodes -> /home/yuki/repos/hugo-modules/hugo-shortcodes",
     "github.com/YourOnly-One/hugo-atom-feed -> /home/yuki/repos/hugo-modules/hugo-atom-feed",
-    "github.com/pacollins/hugo-future-imperfect-slim -> /home/yuki/repos/hugo-themes/hugo-future-imperfect-slim",
+    "github.com/pacollins/hugo-future-imperfect-slim -> /home/yuki/repos/hugo-themes/snoworld-hugo-future-imperfect-slim",
     "github.com/YourOnly-One/youronlyone-hugo-content -> /home/yuki/repos/hugo-modules/youronlyone-hugo-content"
   ]
 
@@ -636,7 +636,7 @@
 
 [params]
   googleTagManager = "GTM-KT65GHZ"
-  subdir = "way"
+  subdir = "snoworld"
   rssfull = "true"
   faviconcache = "fmgy"
   faviconbuster = "TimmieIsMyFate"
