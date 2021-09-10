@@ -1,7 +1,6 @@
 ####### Base Config #######
-  baseURL = "https://im.YourOnly.One/snoworld"                    # .Site.BaseURL
+  baseURL = "https://im.youronly.one/snoworld"                    # .Site.BaseURL
   title = "Snoworld"                # .Site.Title; IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
-  author = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"                               # .Site.Author
   copyright = ""                                          # .Site.Copyright; we are using our own footer
   timeZone = "Asia/Manila"
 
@@ -27,7 +26,7 @@
   enableInlineShortcodes = false                          # disabled for security reasons as per Hugo documentation
   enableRobotsTXT = false                                 # Hugo robots.txt template
   relativeURLs = false                                    # false for our use-case; make all relative URLs relative to content root
-  refLinksNotFoundURL = "https://YourOnly.One"
+  refLinksNotFoundURL = "https://im.youronly.one/snoworld/"
 
   ## Dev settings ##
     publishDir = "../../live/public/snoworld"
@@ -48,6 +47,18 @@
   ## Theme settings ##
     pluralizeListTitles = false
   ## Theme settings ##
+
+
+#######  #######  #######  #######  #######  #######  #######  #######
+
+
+[author]                                                    # .Site.Author
+  name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+  email = ""
+  homepage = "https://youronly.one"
+  rel = "me noopener"
+  #rel = "noopener external nofollow"
+  avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
 
 
 #######  #######  #######  #######  #######  #######  #######  #######
@@ -174,7 +185,7 @@
     [[languages.en-ph.menu.main]]
       name              = "YourOnly.One™"
       identifier        = "yoo-home"
-      url               = "https://im.YourOnly.One"
+      url               = "https://im.youronly.one"
       pre               = "<i class='fa fa-home'></i>"
       weight            = 8
 
@@ -281,7 +292,7 @@
       rssIntro              = true
       socialIntro           = true
       [languages.ja.params.intro.pic]
-        src                 = "https://rsc.YourOnly.One/img/y/snoworld-square.webp"
+        src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
         shape               = "circle"
         width               = ""
         alt                 = "雪の世界"
@@ -324,7 +335,7 @@
     [[languages.ja.menu.main]]
       name              = "YourOnly.One™"
       identifier        = "yoo-home"
-      url               = "https://im.YourOnly.One/ja"
+      url               = "https://im.youronly.one/ja"
       pre               = "<i class='fa fa-home'></i>"
       weight            = 8
 
@@ -351,7 +362,7 @@
       rssIntro              = true
       socialIntro           = true
       [languages.ko.params.intro.pic]
-        src                 = "https://rsc.YourOnly.One/img/y/snoworld-square.webp"
+        src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
         shape               = "circle"
         width               = ""
         alt                 = "스노우 월드"
@@ -394,7 +405,7 @@
     [[languages.ko.menu.main]]
       name              = "YourOnly.One™"
       identifier        = "yoo-home"
-      url               = "https://im.YourOnly.One/ko"
+      url               = "https://im.youronly.one/ko"
       pre               = "<i class='fa fa-home'></i>"
       weight            = 8
 
@@ -625,7 +636,6 @@
 
 [params]
   googleTagManager = "GTM-KT65GHZ"
-  siteFullURL = "https://im.YourOnly.One/snoworld"                # Unfortunately we need to add this because using .Site.BaseURL is not working properly in /layouts/_default/list.atom.xml
   subdir = "way"
   rssfull = "true"
   faviconcache = "fmgy"
@@ -635,15 +645,14 @@
   ### BGN: Structured Data ###
     siteStartYear = 2003
     description = "Society frozen and analysed."
-    license = "https://im.YourOnly.One/p/legal-notice"
+    license = "https://im.youronly.one/p/legal-notice/"
     #issn = ""
     #awards = [""]
-    images = ["https://rsc.YourOnly.One/img/y/snoworld-square.webp"]
+    images = ["https://rsc.youronly.one/img/y/snoworld-square.webp"]
 
     name = "YourOnly.One" # your company name
-    author = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
     primaryauthor = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)" # Used as primary author if no specific is set
-    ownerhomepage = "https://YourOnly.One"
+    ownerhomepage = "https://youronly.one"
     alternatenames = [ "JC John Sese Cuneta", "Yuki"]
     gender = "https://schema.org/Male"
     knowslanguages = ["en-PH", "fil", "tl-Tglg"]
@@ -653,9 +662,9 @@
     copyrightnotice = "JC John Sese Cuneta"
     copyrightyear = "2003"      # same as datePublished
 
-    logourl = "https://rsc.YourOnly.One/img/y/snoworld-square.webp" # Used in structured data as logo url
+    logourl = "https://rsc.youronly.one/img/y/snoworld-square.webp" # Used in structured data as logo url
     keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ", "Snoworld", "스노우 월드", "雪の世界"] # Can be overriden per page
-    imageurl = "https://rsc.YourOnly.One/img/y/snoworld-square.webp" # Used in structured data as background image
+    imageurl = "https://rsc.youronly.one/img/y/snoworld-square.webp" # Used in structured data as background image
 
     contact = "" # Primary email address
     phone = "" # Primary phone
@@ -704,7 +713,7 @@
       alwaysOnHomepage      = false
 
       [params.intro.pic]
-        src                 = "https://rsc.YourOnly.One/img/y/snoworld-square.webp"
+        src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
         shape               = "circle"
         width               = ""
         alt                 = "Snoworld"
@@ -741,6 +750,14 @@
   ### END: Theme Settings ###
 
   ### BGN: Other Settings ###
+    [params.author]                                                    # .Param "author.key"
+      name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+      email = ""
+      homepage = "https://youronly.one"
+      rel = "me noopener"
+      #rel = "noopener external nofollow"
+      avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
+
     [params.siteowner]
       given_name = "Yahuhanan Yukia"
       middle_name = "Sese"
@@ -748,7 +765,7 @@
 
     [params.semweb.publisher]
       name = "YourOnly.One"
-      sameas = "https://YourOnly.One"
+      sameas = "https://youronly.one"
 
     [params.verify]
       naver = "0212955cb24d6e2c67f92be3c7833cae8a98fa8e"
