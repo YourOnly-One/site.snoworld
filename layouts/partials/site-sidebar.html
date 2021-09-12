@@ -128,6 +128,25 @@
       </section>
     {{ end }}
   {{ end }}
+  {{ if .Site.Params.sidebar.tags }}
+    {{ if ne ($.Scratch.Get "showTags") false }}
+
+      <section id="categories">
+        <header>
+          <h1><a href="{{ "tags" | relLangURL }}">{{ i18n "tags" (len .Site.Taxonomies.tags) }}</a></h1>
+        </header>
+        <ul>
+          {{ $.Scratch.Set "tags" (cond .Site.Params.sidebar.tagsByCount .Site.Taxonomies.tags.ByCount .Site.Taxonomies.tags.Alphabetical) }}
+          {{ range $key, $value := $.Scratch.Get "tags" }}
+          <li>
+              {{- /* <a href="{{ printf "%s/%s" "tags" $value.Name | urlize | relLangURL }}/">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a> */ -}}
+              <a href="{{ .Page.Permalink }}">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a>
+          {{ end }}
+          </li>
+        </ul>
+      </section>
+    {{ end }}
+  {{ end }}
   {{ if .Site.Params.sidebar.about }}
     <section id="mini-bio">
       <header>

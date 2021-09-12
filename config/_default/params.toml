@@ -88,6 +88,10 @@ jquerycdn = true
     postAmount          = 10
     categories          = true
     categoriesByCount   = true
+    tags                = true
+    tagsByCount         = true
+    series              = true
+    seriesByCount       = true
 
   [footer]
     rssFooter           = true
