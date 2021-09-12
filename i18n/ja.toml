@@ -19,12 +19,6 @@
 [contact_replies]
   one = "通常、1 時間以内に返信します。"
   other = "通常、{{ .Count }} 時間以内に返信します。"
-[categories]
-  one = "カテゴリー"
-  other = "カテゴリー"
-[tags]
-  one = "タグ"
-  other = "タグ"
 [next_page]
   other = "次のページ"
 [previous_page]

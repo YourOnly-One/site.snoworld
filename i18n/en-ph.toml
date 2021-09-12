@@ -19,12 +19,6 @@
 [contact_replies]
   one = "Replies typically within 1 hour."
   other = "Replies typically within {{ .Count }} hours."
-[categories]
-  one = "Category"
-  other = "Categories"
-[tags]
-  one = "Tag"
-  other = "Tags"
 [next_page]
   other = "Next Page"
 [previous_page]

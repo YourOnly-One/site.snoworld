@@ -18,12 +18,6 @@
 # Sections
 [contact_replies]
   other = "대체로 {{ .Count }}시간이내에 답신을 드리고 있습니다."
-[categories]
-  one = "카테고리"
-  other = "카테고리"
-[tags]
-  one = "태그"
-  other = "태그"
 [next_page]
   other = "다음 페이지"
 [previous_page]
