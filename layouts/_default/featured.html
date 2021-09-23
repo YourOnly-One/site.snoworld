@@ -19,7 +19,7 @@
   {{- else if .Params.images -}}
     {{- range first 1 .Params.images -}}
       {{- $src = $.Params.Cover | absURL -}}
-      {{- /*
+      {{- /* YourOnly.One: changed
         {{- $alt = .alt -}}
         {{- with .stretch -}}
           {{- $stretch = . -}}
