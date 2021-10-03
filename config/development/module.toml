@@ -25,7 +25,7 @@ replacements = [
   path = "github.com/YourOnly-One/hugo-atom-feed"
 
 [[imports]]
-  path = "github.com/pacollins/hugo-future-imperfect-slim"
+  path = "github.com/techmagus/hugo-theme-future-imperfect-slim"
 
 [[imports]]
   path = "github.com/YourOnly-One/yoo-hugo-content"
