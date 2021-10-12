@@ -39,7 +39,8 @@
       <header>
         <h1>{{ i18n "recent_posts" }}</h1>
       </header>
-      {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+      {{/* YourOnly.One: changed */}}
+      {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainTypes) }}
       <article class="mini-post">
           {{ .Render "featured" }}
         <header>
@@ -48,11 +49,12 @@
         </header>
       </article>
       {{ end }}
-      {{- /* if ge (len (where site.RegularPages "Type" "in" site.Params.mainSections)) (.Site.Params.sidebar.postAmount | default 5) }}
+      {{/* YourOnly.One: changed */}}
+      {{ if ge (len (where site.RegularPages "Type" "in" site.Params.mainTypes)) (.Site.Params.sidebar.postAmount | default 5) }}
         <footer>
           <a href="{{ ( .Site.Params.viewMorePostsLink | default "blog") | relLangURL }}" class="button">{{ i18n "see_more" }}</a>
         </footer>
-      {{ end */ -}}
+      {{ end }}
     </section>
   {{ end }}
   <section id="goodreads">
