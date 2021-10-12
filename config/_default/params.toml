@@ -1,4 +1,5 @@
-#mainSections = ["blog", "c"]
+#mainSections = ["blog", "posts"]                                             # Hugo default
+mainTypes = ["article", "sitepage", "review"]                                                # YourOnly.One
 
 googleTagManager = "GTM-KT65GHZ"
 subdir = "snoworld"
@@ -46,7 +47,7 @@ jquerycdn = true
   highlightjs           = true
   highlightjsTheme      = ""
   highlightjsLang       = []
-  viewMorePostsLink     = "posts"
+  viewMorePostsLink     = "blog"
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
