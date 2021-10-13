@@ -97,8 +97,16 @@
     description = "社会凍結し、分析しました。"     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
   [ja.params.meta]
     description         = "社会凍結し、分析しました。"
+    author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
   [ja.params.header]
     navbarTitle         = "雪の世界"
+    dynamicTitles       = false
+    searchMenu          = true
     shareMenu           = true
     languageMenu        = true
   [ja.params.intro]
@@ -106,6 +114,8 @@
     paragraph             = "社会凍結し、分析しました。"
     rssIntro              = true
     socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
     [ja.params.intro.pic]
       src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
       shape               = "circle"
@@ -148,8 +158,16 @@
     description = "사회는 냉동 및 분석."      # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
   [ko.params.meta]
     description         = "사회는 냉동 및 분석."
+    author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
   [ko.params.header]
     navbarTitle         = "스노우 월드"
+    dynamicTitles       = false
+    searchMenu          = true
     shareMenu           = true
     languageMenu        = true
   [ko.params.intro]
@@ -157,6 +175,8 @@
     paragraph             = "사회는 냉동 및 분석."
     rssIntro              = true
     socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
     [ko.params.intro.pic]
       src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
       shape               = "circle"
