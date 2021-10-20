@@ -55,11 +55,13 @@
   {{- end -}}
   {{- .Scratch.Set "Permalink" .Permalink -}}
   {{- .Scratch.Set "Title" .Title -}}
+  {{- /* YourOnly.One: we do not need this
   {{- if .Params.Author -}}
     {{- .Scratch.Set "Author" .Params.Author -}}
   {{- else -}}
     {{- .Scratch.Set "Author" .Author -}}
   {{ end }}
+  */ -}}
 
   <!-- BGN: YourOnly.One Head-02-Bottom -->
     {{- if templates.Exists "partials/youronly.one-head-02-btm.html" -}}

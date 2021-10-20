@@ -1,3 +1,5 @@
+{{- $authors := .Site.Data.persons -}}
+{{- $siteAuthor := index $authors ($.Param "semweb.person") }}
 <header>
   <div class="title">
     {{ if $.Scratch.Get "h1" }}
@@ -13,7 +15,12 @@
   <div class="meta">
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02 15:04:05 MST" }}</time> {{/* YourOnly.One: changed */}}
     {{/* YourOnly.One: replaced {{ with .Params.author }}<p>{{ . }}</p>{{ end }} */}}
-    {{ with $.Param "author" }}<p>{{ with $.Param "author.homepage" }}<a href="{{ . }}" {{ with $.Param "author.rel" }}rel="{{ . }}"{{ end }}>{{ end }}{{ $.Param "author.name" }}{{ with $.Param "author.homepage" }}</a>{{ end }}</p>{{ end }}
+    {{ with $.Param "author.person" }}
+      {{ $author := index $authors . }}
+      <p>{{ with ($.Param "author.url") | default $author.url }}<a href="{{ . }}" {{ with ($.Param "author.rel") | default $author.rel }}rel="{{ . }}"{{ end }}>{{ end }}{{ ($.Param "author.name") | default $author.name }}{{ with ($.Param "author.url") | default $author.url }}</a>{{ end }}</p>
+    {{ else }}
+      <p>{{ with $siteAuthor.url }}<a href="{{ . }}" {{ with $siteAuthor.rel }}rel="{{ . }}"{{ end }}>{{ end }}{{ $siteAuthor.name }}{{ with $siteAuthor.url }}</a>{{ end }}</p>
+    {{ end }}
     {{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
   </div>
 </header>
