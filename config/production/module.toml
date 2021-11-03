@@ -39,6 +39,28 @@
       lang = "ko"
   # END: /snoworld/ content
 
+  # BGN: /love/ content
+    #[[imports.mounts]]
+    #  source = "love/eng-ph"
+    #  target = "content"
+    #  lang = "en"
+    [[imports.mounts]]
+      source = "love/eng-ph"
+      target = "content"
+      lang = "en-ph"
+      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+    [[imports.mounts]]
+      source = "love/nihongo"
+      target = "content"
+      lang = "ja"
+      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+    [[imports.mounts]]
+      source = "love/hangugeo"
+      target = "content"
+      lang = "ko"
+      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+  # END: /love/ content
+
 
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-mounts
 #   if you add a mounts section you should remove the old staticDir etc. settings.
