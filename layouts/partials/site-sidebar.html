@@ -41,7 +41,7 @@
       </header>
       {{/* YourOnly.One: changed */}}
       {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainTypes) }}
-      <article class="mini-post">
+      <article class="mini-post" data-clarity-region="article">
           {{ .Render "featured" }}
         <header>
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
