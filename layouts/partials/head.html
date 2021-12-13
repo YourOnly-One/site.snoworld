@@ -1,11 +1,10 @@
 <head>
   {{ partial "meta" . }}
-  {{- /* We already have this
-    {{- hugo.Generator -}}
+  {{- /* YourOnly.One: We already have this
+    {{ hugo.Generator }}
   */ -}}
-
-  {{- if .Site.Params.enableCDN -}}
-    {{- if .Site.Params.highlightjs -}}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{- end -}}
+  {{ if .Site.Params.enableCDN }}
+    {{- if .Site.Params.highlightjs -}}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{- end -}}
     {{- range .Site.Params.cssFiles -}}
       {{- if eq . "default" -}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -15,12 +14,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
         {{- $mainCSSOptions := (dict "targetPath" "css/main.min.css" "outputStyle" "compressed") -}}
         {{- $main := resources.Get "scss/main.scss" | resources.ToCSS $mainCSSOptions | resources.Fingerprint -}}
+        {{/* YourOnly.One: remove integrity, it is not working correctly */}}
         <link rel="stylesheet" href="{{ $main.RelPermalink }}">
         {{- if eq (i18n "letter_direction") "RTL" -}}
           {{- $rtl := resources.Get "css/rtl.css" | minify -}}
           <link rel="stylesheet" href="{{ $rtl.RelPermalink }}">
         {{- end -}}
-        <!-- <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}"> -->
+        {{- /* YourOnly.One: we don't need this, only causing errors
+          <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}">
+        */ -}}
       {{- else }}
         <link rel="stylesheet" href="{{ . | relURL }}">
       {{- end -}}
@@ -31,7 +33,7 @@
         {{- $cssSlice := slice -}}
         {{- if $.Site.Params.highlightjs -}}
           {{ with $.Site.Params.highlightjsTheme }}
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/{{ . }}.min.css">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ . }}.min.css">
           {{ else }}
             {{- $cssSlice = $cssSlice | append (resources.Get "css/default.css") -}}
           {{ end }}
@@ -42,12 +44,15 @@
         {{- end -}}
         {{- $cssSlice = $cssSlice | append (resources.Get "scss/main.scss" | toCSS) -}}
         {{- $css := $cssSlice | resources.Concat "css/bundle.css" | minify | fingerprint -}}
+        {{/* YourOnly.One: remove integrity, it is not working correctly */}}
         <link rel="stylesheet" href="{{ $css.RelPermalink }}">
         {{- if eq (i18n "letter_direction") "RTL" -}}
           {{- $rtl := resources.Get "css/rtl.css" | minify -}}
           <link rel="stylesheet" href="{{ $rtl.RelPermalink }}">
         {{- end -}}
-        <!-- <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}"> -->
+        {{- /* YourOnly.One: we don't need this, only causing errors
+          <link rel="stylesheet" href="{{ "css/add-on.css" | relURL }}">
+        */ -}}
       {{- else }}
         <link rel="stylesheet" href="{{ . | relURL }}">
       {{- end -}}
@@ -56,11 +61,11 @@
   {{- .Scratch.Set "Permalink" .Permalink -}}
   {{- .Scratch.Set "Title" .Title -}}
   {{- /* YourOnly.One: we do not need this
-  {{- if .Params.Author -}}
-    {{- .Scratch.Set "Author" .Params.Author -}}
-  {{- else -}}
-    {{- .Scratch.Set "Author" .Author -}}
-  {{ end }}
+    {{- if .Params.Author -}}
+      {{- .Scratch.Set "Author" .Params.Author -}}
+    {{- else -}}
+      {{- .Scratch.Set "Author" .Author -}}
+    {{ end }}
   */ -}}
 
   <!-- BGN: YourOnly.One Head-02-Bottom -->

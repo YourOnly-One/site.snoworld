@@ -5,7 +5,7 @@
   {{- $blur := .Site.Params.removeBlur -}}
   {{- if .Params.featured -}}
     {{/* YourOnly.One: changed Date format */}}
-    {{- $src = (path.Join "img" (cond (eq .Params.featuredpath "date") (.Page.Date.Format "2006-01") (.Params.featuredpath)) .Params.featured) | absURL -}}
+    {{- $src = (path.Join "img" (cond (eq .Params.featuredpath "date") (.Page.Date.Format "2006-01") (.Params.featuredpath)) .Params.featured) | relURL -}}
     {{- $alt = .Params.featuredalt -}}
     {{- with .Params.featuredstretch -}}
       {{- $stretch = . -}}
@@ -16,7 +16,7 @@
   {{- else if .Params.images -}}
     {{- range first 1 .Params.images -}}
       {{/* YourOnly.One: changed */}}
-      {{- $src = . | absURL -}}
+      {{- $src = . | relURL -}}
       {{- /* YourOnly.One: disabled we do not use these in our frontmatter
         {{- $alt = .alt -}}
         {{- with .stretch -}}

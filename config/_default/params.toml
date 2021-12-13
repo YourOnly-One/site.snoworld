@@ -32,6 +32,8 @@ googleadsense = "ca-pub-8360283248006398"
 	removeBlur            = false
 	socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest"]
 	hideEmptyStats        = true
+	toc                   = true
+	tocWords              = 400
 
 	[meta]
 		description         = "Society frozen and analysed."
