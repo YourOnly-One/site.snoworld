@@ -34,6 +34,28 @@
       </div>
     </div>
   </section>
+  <section id="bookmarks">
+    <header>
+      <h1>{{ i18n "bookmarks" }}</h1>
+    </header>
+    <ul>
+      <li><a href="https://im.youronly.one/p/linklist/" rel="me noopener">YourOnly.One Linklist</a></li>
+      <li><a href="https://im.youronly.one/techmagus/linklists-are-back-2021353/" rel="me noopener">Linklists Are Back</a></li>
+      <li><a href="https://semweb.youronly.one" rel="noopener external">Semantic Web for Hugo</a></li>
+    </ul>
+  </section>
+  <section id="yuki_network">
+    <header>
+      <h1>{{ i18n "yukinetwork" }}</h1>
+    </header>
+    <ul>
+      <li><a href="https://im.youronly.one/way/" rel="me noopener">Way of Believers</a></li>
+      <li><a href="https://im.youronly.one/techmagus/" rel="me noopener">techmagus</a></li>
+      <li><a href="https://im.youronly.one/love/" rel="me noopener">Love &amp; Relationship</a></li>
+      <li><a href="https://im.youronly.one/yuki/" rel="me noopener">YOOki Chronicles</a></li>
+    </ul>
+  </section>
+
   {{ if gt .Site.Params.sidebar.postAmount 0 }}
     <section id="recent-posts">
       <header>
@@ -133,7 +155,7 @@
   {{ if .Site.Params.sidebar.tags }}
     {{ if ne ($.Scratch.Get "showTags") false }}
 
-      <section id="categories">
+      <section id="tags">
         <header>
           <h1><a href="{{ "tags" | relLangURL }}">{{ i18n "tags" (len .Site.Taxonomies.tags) }}</a></h1>
         </header>
