@@ -57,17 +57,17 @@ replacements = [
       source = "love/eng-ph"
       target = "content"
       lang = "en-ph"
-      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+      includeFiles = ["**/20160703-the-choice-2016.md"]
     [[imports.mounts]]
       source = "love/nihongo"
       target = "content"
       lang = "ja"
-      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+      includeFiles = ["**/20160703-the-choice-2016.md"]
     [[imports.mounts]]
       source = "love/hangugeo"
       target = "content"
       lang = "ko"
-      includeFiles = ["**/20160703-The_Choice-(2016).md"]
+      includeFiles = ["**/20160703-the-choice-2016.md"]
   # END: /love/ content
 
 
