@@ -111,12 +111,12 @@ jquerycdn = true
 		license = "https://youronly.one/p/legal-notice/"
 		publisher = "https://yelosan.youronly.one/"
 		sameas = [
-			"https://fb.com/snoworld",
+			"https://facebook.com/snoworld",
 			"https://mastodon.social/@YourOnlyOne",
 			"https://pixelfed.social/youronlyone",
-			"https://twitter.com/YourOnlyOne7",
+			"https://twitter.com/YourOnlyONEofcl",
 			"https://instagram.com/YourOnly.One",
-			"https://fb.com/YourOnly.One0"
+			"https://facebook.com/YourOnly.ONE.ofcl"
 		]
 
 		[[semweb.persons]]
