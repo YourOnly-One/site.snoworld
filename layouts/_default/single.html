@@ -10,7 +10,22 @@
         {{ if and (gt .WordCount .Site.Params.tocWords) ( .Site.Params.toc ) }}
           {{ .TableOfContents }}
         {{ end }}
-        {{ .Content }}
+
+        {{- /* BGN: YourOnly.One Content-PartOf */ -}}
+          {{- if templates.Exists "partials/youronly.one-content-partof.html" -}}
+            {{ partial "youronly.one-content-partof.html" . }}
+          {{- end }}
+        {{- /* END: YourOnly.One Content-PartOf */ -}}
+
+        {{- /* BGN: YourOnly.One: changed */ -}}
+          {{- /* .Content */ -}}
+
+          {{- $inserthere := `<div role="cover-image-attributions">` -}}
+          {{- $insertcontent := partial "youronly.one-content-partof.html" . -}}
+          {{- $joined := print $insertcontent $inserthere -}}
+          {{- $content := replace .Content $inserthere $joined 1 -}}
+          {{ $content | safeHTML }}
+        {{- /* END: YourOnly.One: changed */ -}}
       </div>
       <footer>
         {{ .Render "stats" }}
