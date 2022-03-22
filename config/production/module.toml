@@ -22,40 +22,40 @@
   path = "github.com/YourOnly-One/yoo-hugo-content"
   # BGN: /snoworld/ content
     #[[imports.mounts]]
-    #  source = "snoworld/eng-ph"
+    #  source = "snoworld/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "snoworld/eng-ph"
+      source = "snoworld/en-ph"
       target = "content"
       lang = "en-ph"
     [[imports.mounts]]
-      source = "snoworld/nihongo"
+      source = "snoworld/ja"
       target = "content"
       lang = "ja"
     [[imports.mounts]]
-      source = "snoworld/hangugeo"
+      source = "snoworld/ko"
       target = "content"
       lang = "ko"
   # END: /snoworld/ content
 
   # BGN: /love/ content
     #[[imports.mounts]]
-    #  source = "love/eng-ph"
+    #  source = "love/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "love/eng-ph"
+      source = "love/en-ph"
       target = "content"
       lang = "en-ph"
       includeFiles = ["**/20160703-the-choice-2016.md"]
     [[imports.mounts]]
-      source = "love/nihongo"
+      source = "love/ja"
       target = "content"
       lang = "ja"
       includeFiles = ["**/20160703-the-choice-2016.md"]
     [[imports.mounts]]
-      source = "love/hangugeo"
+      source = "love/ko"
       target = "content"
       lang = "ko"
       includeFiles = ["**/20160703-the-choice-2016.md"]
@@ -74,19 +74,19 @@
     target = "assets"
 
   #[[mounts]]
-  #  source = "content/eng-ph"
+  #  source = "content/en-ph"
   #  target = "content"
   #  lang = "en"                                        # when in multihost / multilang mode
   [[mounts]]
-    source = "content/eng-ph"
+    source = "content/en-ph"
     target = "content"
     lang = "en-ph"                                      # when in multihost / multilang mode
   [[mounts]]
-    source = "content/nihongo"
+    source = "content/ja"
     target = "content"
     lang = "ja"                                         # when in multihost / multilang mode
   [[mounts]]
-    source = "content/hangugeo"
+    source = "content/ko"
     target = "content"
     lang = "ko"                                         # when in multihost / multilang mode
 
@@ -103,18 +103,18 @@
     target = "layouts"
 
   #[[mounts]]
-  #  source = "static/eng-ph"
+  #  source = "static/en-ph"
   #  target = "static"
   #  lang = "en"                                        # when in multihost / multilang mode
   [[mounts]]
-    source = "static/eng-ph"
+    source = "static/en-ph"
     target = "static"
     lang = "en-ph"                                      # when in multihost / multilang mode
   [[mounts]]
-    source = "static/nihongo"
+    source = "static/ja"
     target = "static"
     lang = "ja"                                         # when in multihost / multilang mode
   [[mounts]]
-    source = "static/hangugeo"
+    source = "static/ko"
     target = "static"
     lang = "ko"                                         # when in multihost / multilang mode
