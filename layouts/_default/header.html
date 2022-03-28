@@ -1,3 +1,4 @@
+{{- $datetimeformat := i18n "datetimeformat" -}}
 {{- $datapersons := .Site.Data.persons -}}
 {{- $semwebpersons := .Site.Params.semweb.persons -}}
 {{- $frontmatterpersons := .Params.authors }}
@@ -14,7 +15,7 @@
     {{ end }}
   </div>
   <div class="meta">
-    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006-01-02 15:04:05 MST" }}</time> {{/* YourOnly.One: changed */}}
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ time.Format $datetimeformat .Date }}</time> {{/* YourOnly.One: changed */}}
     {{/* YourOnly.One: replaced {{ with .Params.author }}<p>{{ . }}</p>{{ end }} */}}
     {{ if $frontmatterpersons }}{{ range $i, $frontmatterperson := index $frontmatterpersons }}{{ $dataperson := index $datapersons $frontmatterperson.person }}{{ if $i }}, {{ end }}
       {{- /* note: if [[authors]] is set in frontmatter, use this to display a list of persons with fallback to /data/persons/ if present */}}

@@ -1,3 +1,4 @@
+{{- $datetimeformat := i18n "datetimeformat" -}}
 <section id="site-sidebar">
   <section id="Mabuhay_Clock_Flag">
     <div class="txt_center margin_bottom_block_end" lang="fil-Tglg" style="font-size: 3em;">ᜋᜊᜓᜑᜌ᜔</div>
@@ -67,7 +68,7 @@
           {{ .Render "featured" }}
         <header>
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "2006-01-02 15:04:05 MST" }}</time>
+          <time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">{{ time.Format $datetimeformat .Date }}</time>
         </header>
       </article>
       {{ end }}
