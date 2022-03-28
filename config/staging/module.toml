@@ -70,6 +70,17 @@ replacements = [
       includeFiles = ["**/20160703-the-choice-2016.md"]
   # END: /love/ content
 
+  # BGN: /snoworld/ fill gaps content
+    [[imports.mounts]]
+      source = "snoworld/en-ph"
+      target = "content"
+      lang = "ja"
+    [[imports.mounts]]
+      source = "snoworld/en-ph"
+      target = "content"
+      lang = "ko"
+  # END: /snoworld/ fill gaps content
+
 
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-mounts
 #   if you add a mounts section you should remove the old staticDir etc. settings.
