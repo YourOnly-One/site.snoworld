@@ -1,0 +1,186 @@
+{{- $datetimeformat := i18n "datetimeformat" -}}
+<section id="site-sidebar">
+  <section id="Mabuhay_Clock_Flag">
+    <div class="txt_center margin_bottom_block_end" lang="fil-Tglg" style="font-size: 3em;">ᜋᜊᜓᜑᜌ᜔</div>
+    <!-- <div class="txt_center"><iframe src="https://freesecure.timeanddate.com/clock/i7bkql2t/n1440/tlkr47/fn8/fs20/fc00de23/tc000/pct/ftb/bas7/bat4/bac00de23/pa10/tt0/tw0/tm3/td2/th1/ts1/ta1/tb4" sandbox="allow-same-origin allow-scripts" allowfullscreen="allowfullscreen" frameborder="0" width="155" height="80" allowtransparency="true"></iframe></div> -->
+    <!-- <div class="txt_center" style="font-size: 7em; height: 1.20em;"><span class="unicode_emoji">&#x1F1F5;&#x1F1ED;</span></div> -->
+  </section>
+  <section id="Now_Playing-LastFM">
+    <header>
+      <h1>{{ i18n "nowplaying" }}</h1>
+    </header>
+    <!--
+      Developed by Prashant Shrestha
+      + https://prashant.me
+    -->
+    <!--
+      * Modified by ᜌᜓᜃᜒ (Yuki ・ 雪亮) 🇵🇭
+      *   - https://YourOnly.One
+      *
+      * 2021-01-31:
+      *   - Added trackalbum
+      *   - Moved emoji outside of js file into HTML area
+      * 2021-01-30: Switched to Emoji instead of icon files
+    --->
+    <link rel="stylesheet" property="stylesheet" href="https://rsc.youronly.one/css/LastFM-NowPlaying.min.css" />
+    <script src="https://rsc.youronly.one/js/LastFM-NowPlaying.min.js" defer="defer"></script>
+    <div class="nowplayingcard">
+      <div class="nowplayingcontainer-inner">
+        <img id="trackart" src="#">
+        <div class="trackInfo">
+          <span class='emoji'>🎧</span><a id="tracktitle"></a><br/>
+          <span class='emoji'>📀</span><a id="trackalbum"></a><br/>
+          <span class='emoji'>🎤</span><a id="trackartist"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="bookmarks">
+    <header>
+      <h1>{{ i18n "bookmarks" }}</h1>
+    </header>
+    <ul>
+      <li><a href="https://im.youronly.one/p/linklist/" rel="me noopener">YourOnly.One Linklist</a></li>
+      <li><a href="https://im.youronly.one/techmagus/linklists-are-back-2021353/" rel="me noopener">Linklists Are Back</a></li>
+      <li><a href="https://semweb.youronly.one" rel="noopener external">Semantic Web for Hugo</a></li>
+    </ul>
+  </section>
+  <section id="yuki_network">
+    <header>
+      <h1>{{ i18n "yukinetwork" }}</h1>
+    </header>
+    <ul>
+      <li><a href="https://im.youronly.one/way/" rel="me noopener">Way of Believers</a></li>
+      <li><a href="https://im.youronly.one/techmagus/" rel="me noopener">techmagus</a></li>
+      <li><a href="https://im.youronly.one/love/" rel="me noopener">Love &amp; Relationship</a></li>
+      <li><a href="https://im.youronly.one/yuki/" rel="me noopener">YOOki Chronicles</a></li>
+    </ul>
+  </section>
+
+  {{ if gt .Site.Params.sidebar.postAmount 0 }}
+    <section id="recent-posts">
+      <header>
+        <h1>{{ i18n "recent_posts" }}</h1>
+      </header>
+      {{/* YourOnly.One: changed */}}
+      {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainTypes) }}
+      <article class="mini-post" data-clarity-region="article">
+          {{ .Render "featured" }}
+        <header>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <time class="published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">{{ time.Format $datetimeformat .Date }}</time>
+        </header>
+      </article>
+      {{ end }}
+      {{/* YourOnly.One: changed */}}
+      {{ if ge (len (where site.RegularPages "Type" "in" site.Params.mainTypes)) (.Site.Params.sidebar.postAmount | default 5) }}
+        <footer>
+          <a href="{{ ( .Site.Params.viewMorePostsLink | default "blog") | relLangURL }}" class="button">{{ i18n "see_more" }}</a>
+        </footer>
+      {{ end }}
+    </section>
+  {{ end }}
+  <section id="goodreads">
+    <style type="text/css" media="screen">
+      .gr_custom_container_1617779916 {
+        /* customize your Goodreads widget container here*/
+        border: 1px solid gray;
+        border-radius:10px;
+        padding: 10px 5px 10px 5px;
+        background-color: transparent;
+        color: #000000;
+      }
+      .gr_custom_header_1617779916 {
+        /* customize your Goodreads header here*/
+        border-bottom: 1px solid gray;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 120%;
+      }
+      .gr_custom_each_container_1617779916 {
+        /* customize each individual book container here */
+        width: 100%;
+        clear: both;
+        margin-bottom: 10px;
+        overflow: auto;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #aaa;
+      }
+      .gr_custom_book_container_1617779916 {
+        /* customize your book covers here */
+        overflow: hidden;
+        height: 60px;
+        float: left;
+        margin-right: 4px;
+        width: 39px;
+      }
+      .gr_custom_author_1617779916 {
+        /* customize your author names here */
+        font-size: 10px;
+      }
+      .gr_custom_tags_1617779916 {
+        /* customize your tags here */
+        font-size: 10px;
+        color: gray;
+      }
+      .gr_custom_rating_1617779916 {
+        /* customize your rating stars here */
+        float: right;
+      }
+    </style>
+    <script src="https://www.goodreads.com/review/custom_widget/1937551.YourOnly.One%20Bookshelf?cover_position=left&cover_size=small&num_books=5&order=d&shelf=read&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=1&show_title=1&sort=date_updated&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=1&widget_id=1617779916&widget_text_color=000000&widget_title_size=medium&widget_width=full" type="text/javascript" charset="utf-8"></script>
+    <noscript>
+      Share <a rel="nofollow" href="https://www.goodreads.com/">book reviews</a> and ratings with Yahuhanan (יהוחנן) Yukia (雪亮), and even join a <a rel="nofollow" href="https://www.goodreads.com/group">book club</a> on Goodreads.
+    </noscript>
+  </section>
+  {{ if .Site.Params.sidebar.categories }}
+    {{ if ne ($.Scratch.Get "showCategories") false }}
+
+      <section id="categories">
+        <header>
+          <h1><a href="{{ "categories" | relLangURL }}">{{ i18n "categories" (len .Site.Taxonomies.categories) }}</a></h1>
+        </header>
+        <ul>
+          {{ $.Scratch.Set "categories" (cond .Site.Params.sidebar.categoriesByCount .Site.Taxonomies.categories.ByCount .Site.Taxonomies.categories.Alphabetical) }}
+          {{ range $key, $value := $.Scratch.Get "categories" }}
+          <li>
+              {{- /* <a href="{{ printf "%s/%s" "categories" $value.Name | urlize | relLangURL }}/">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a> */ -}}
+              <a href="{{ .Page.Permalink }}">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a>
+          {{ end }}
+          </li>
+        </ul>
+      </section>
+    {{ end }}
+  {{ end }}
+  {{ if .Site.Params.sidebar.tags }}
+    {{ if ne ($.Scratch.Get "showTags") false }}
+
+      <section id="tags">
+        <header>
+          <h1><a href="{{ "tags" | relLangURL }}">{{ i18n "tags" (len .Site.Taxonomies.tags) }}</a></h1>
+        </header>
+        <ul>
+          {{ $.Scratch.Set "tags" (cond .Site.Params.sidebar.tagsByCount .Site.Taxonomies.tags.ByCount .Site.Taxonomies.tags.Alphabetical) }}
+          {{ range $key, $value := $.Scratch.Get "tags" }}
+          <li>
+              {{- /* <a href="{{ printf "%s/%s" "tags" $value.Name | urlize | relLangURL }}/">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a> */ -}}
+              <a href="{{ .Page.Permalink }}">{{ .Page.Title }}<span class="count">{{ $value.Count }}</span></a>
+          {{ end }}
+          </li>
+        </ul>
+      </section>
+    {{ end }}
+  {{ end }}
+  {{ if .Site.Params.sidebar.about }}
+    <section id="mini-bio">
+      <header>
+        <h1>{{ i18n "about" }}</h1>
+      </header>
+      <p>{{ .Site.Params.sidebar.about | safeHTML }}</p>
+      <footer>
+        <a href="{{ "about" | relLangURL }}" class="button">{{ i18n "learn_more" }}</a>
+      </footer>
+    </section>
+  {{ end }}
+</section>

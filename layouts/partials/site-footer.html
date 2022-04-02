@@ -1,0 +1,25 @@
+<footer id="site-footer">
+  {{ if or (.Site.Params.footer.rssFooter) (.Site.Params.footer.socialFooter) }}
+      <ul class="socnet-icons">
+        {{ if .Site.Params.footer.rssFooter }}{{ partial "rss-icon" . }}{{ end }}
+        {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
+      </ul>
+  {{ end }}
+  <p class="copyright">
+
+    <!-- BGN: YourOnly.One Footer-01 -->
+      {{- if templates.Exists "partials/youronly.one-footer-01.html" -}}
+        {{ partial "youronly.one-footer-01.html" . }}
+      {{- end }}
+    <!-- END: YourOnly.One Footer-01 -->
+    <p class="txt_center">
+      <a href="https://github.com/pacollins/hugo-future-imperfect-slim" rel="noopener external nofollow">Future Imperfect Slim</a> {{ i18n "themeby" }} <a href="https://github.com/pacollins/hugo-future-imperfect-slim" rel="noopener external nofollow">Patrick Collins</a> &amp; <a href="https://html5up.net/future-imperfect" rel="noopener external nofollow">HTML5UP</a>
+    </p>
+    {{- /*
+    {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " .Site.LastChange.Year " " (.Site.Params.author | default .Site.Title)) }}
+      <br>
+    {{ i18n "attribution" . | safeHTML }}
+    */ -}}
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

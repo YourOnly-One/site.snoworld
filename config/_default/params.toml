@@ -1,0 +1,145 @@
+#mainSections = ["blog", "posts"]                                             # Hugo default
+mainTypes = ["article", "sitepage", "review"]                                                # YourOnly.One
+
+subdir = "snoworld"
+rssfull = "true"
+faviconcache = "fmgy"
+faviconbuster = "TimmieIsMyFate"
+jquerycdn = true
+websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
+
+googleadsense = "ca-pub-8360283248006398"
+
+### BGN: Structured Data ###
+	siteStartYear = 2003
+
+	description = "Society frozen and analysed."
+	license = "https://im.youronly.one/p/legal-notice/"
+	keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ", "Snoworld", "스노우 월드", "雪の世界"] # Can be overriden per page
+	images = ["https://rsc.youronly.one/img/y/snoworld-square.webp", "https://rsc.youronly.one/img/y/snoworld-railroad-163518_1280.webp"]
+	#copyright = ""
+### END: Structured Data ###
+
+### BGN: Theme Settings ###
+	enableCDN             = true
+	cssFiles              = ["default"]
+	jsFiles               = ["default"]
+	highlightjs           = true
+	highlightjsTheme      = ""
+	highlightjsLang       = []
+	viewMorePostsLink     = "blog"
+	readingTime           = true
+	imageStretch          = ""
+	removeBlur            = false
+	socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest"]
+	hideEmptyStats        = true
+	toc                   = true
+	tocWords              = 400
+
+	[meta]
+		description         = "Society frozen and analysed."
+		author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+		favicon             = false
+		svg                 = true
+		faviconVersion      = "1"
+		msColor             = "#ffffff"
+		iOSColor            = "#ffffff"
+
+	[header]
+		navbarTitle         = "Snoworld"
+		dynamicTitles       = false
+		searchMenu          = true
+		shareMenu           = true
+		languageMenu        = true
+
+	[intro]
+		header                = "Snoworld"
+		paragraph             = "Society frozen and analysed"
+		rssIntro              = true
+		socialIntro           = true
+		hideWhenSingleColumn  = false
+		alwaysOnHomepage      = false
+
+		[intro.pic]
+			src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
+			shape               = "circle"
+			width               = ""
+			alt                 = "Snoworld"
+
+	[sidebar]
+		#about               = "ABOUT SIDEBAR"
+		postAmount          = 10
+		categories          = true
+		categoriesByCount   = true
+		tags                = true
+		tagsByCount         = true
+		series              = true
+		seriesByCount       = true
+
+	[footer]
+		rssFooter           = true
+		socialFooter        = true
+
+	[utterances]
+		enabled             = false
+		#repo                = ""
+		#issueTerm           = "pathname"
+		#issueNumber         = ""
+		#label               = ""
+		#theme               = "github-light"
+
+	[staticman]
+		enabled             = false
+		#api                 = ""  # No Trailing Slash
+		#gitProvider         = ""
+		#username            = ""
+		#repo                = ""
+		#branch              = ""
+
+		#[staticman.recaptcha]
+			#siteKey           = ""
+			#encryptedKey      = ""
+### END: Theme Settings ###
+
+### BGN: Other Settings ###
+	[semweb]
+		org = "yelosan"
+
+		#issn = ""
+		acquirelicensepage = "https://youronly.one/p/legal-notice/"
+		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
+		credittext = "YourOnly.One (https://youronly.one)"
+		datefirstpublished = "2003-12-12"
+		isblog = true
+		license = "https://youronly.one/p/legal-notice/"
+		publisher = "https://yelosan.youronly.one/"
+		sameas = [
+			"https://mastodon.social/@youronlyone",
+			"https://pixelfed.social/youronlyone",
+			"https://youtube.com/YourOnlyONEofcl",
+			"https://twitter.com/YourOnlyONEofcl",
+			"https://instagram.com/YourOnly.One",
+			"https://facebook.com/YourOnly.ONE.ofcl",
+			"https://facebook.com/snoworld"
+		]
+
+		[[semweb.persons]]
+			person = "yuki"
+			#id = ""
+			#name = ""ᜌᜓᜃᜒ (Yuki | 雪亮)"
+			#url = ""
+			#avatar = ""
+			#rel = "noopener external nofollow"
+
+	[verify]
+		flattr = "4j1gl5"
+		naver = "0212955cb24d6e2c67f92be3c7833cae8a98fa8e"
+		wot = "06c7ef6e7986586661ef"
+		ocs = "c563648adcfa021a0dfd3d3d8f0be64a"
+		followit = "qkxvJg1FpRRYUTh3VegL"
+
+	[analytics]
+		microanalyticsio = "ZwSg9rf6GA"
+		cfwebanalytics = "07a05e5302d1458da3561ce41791e284"
+		microsoftclarity = "63ddi0b99e"
+### END: Other Settings ###

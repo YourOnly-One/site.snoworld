@@ -1,0 +1,31 @@
+{{ define "main" }}
+  {{/* YourOnly.One: changed */}}
+
+  {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
+    <article class="post" data-clarity-region="article">
+      <div class="post">
+        <header>
+          <div class="title">
+            <h1>{{ .Title }}</h1>
+          </div>
+        </header>
+      </div>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </article>
+  {{ end }}
+
+  {{ $paginator := .Paginate (cond .IsHome (where site.RegularPages "Type" "in" site.Params.mainTypes) (.Data.Pages) ) }}
+  {{ range $paginator.Pages }}
+    {{ .Render "content-list" }}
+  {{ end }}
+  <div class="pagination">
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}" class="button left"><span>{{ i18n "previous_page" }}</span></a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}" class="button right"><span>{{ i18n "next_page" }}</span></a>
+    {{ end }}
+  </div>
+{{ end }}

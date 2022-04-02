@@ -1,0 +1,208 @@
+### Info: https://gohugo.io/content-management/multilingual/#configure-languages
+
+#[en]
+  #languagename = "English"
+  #languageflag = "🇬🇧"
+  #languagecode = "en"
+  #languagecodecountry = "DO_NOT_USE"
+  #timeZone = "Etc/UTC"
+  #weight = 110
+
+[en-ph]
+  languagename = "English (PH)"
+  languageflag = "🇵🇭"
+  languagecode = "en-PH"
+  languagecodecountry = "ph"
+  timeZone = "Asia/Manila"
+  weight = 111
+  [en-ph.params]
+  [[en-ph.menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+  [[en-ph.menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+  [[en-ph.menu.main]]
+    name              = "Tags"
+    identifier        = "tags"
+    url               = "/tags/"
+    pre               = "<i class='fas fa-tags'></i>"
+    weight            = 6
+  [[en-ph.menu.main]]
+    name              = "YourOnly.One™"
+    identifier        = "yoo-home"
+    url               = "https://im.youronly.one"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 8
+
+#[fil]
+  #languageName = "Filipino"
+  #languageFlag = "🇵🇭"
+  #languageCode = "fil"
+  #languageCodeCountry = "ph"
+  #timeZone = "Asia/Manila"
+  #weight = 120
+  #title = ""
+  #[fil.params]
+    #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+
+#[tl-tglg]
+  #languageName = "Tagalog Baybayin"
+  #languageFlag = "🇵🇭"
+  #languageCode = "tl-Tglg"
+  #languageCodeCountry = "ph"
+  #timeZone = "Asia/Manila"
+  #weight = 121
+  #title = ""
+  #[tl.tglg.params]
+    #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+
+#[zh-hant]
+  #languageName = "中文（繁體）"
+  #languageFlag = "🇨🇳"
+  #languageCode = "zh-Hant"
+  #languageCodeCountry = "cn"
+  #timeZone = "Asia/Shanghai"
+  #weight = 130
+  #title = ""
+  #[zh-hant.params]
+    #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+
+#[zh-hans]
+  #languageName = "中文（简体）"
+  #languageFlag = "🇨🇳"
+  #languageCode = "zh-Hans"
+  #languageCodeCountry = "cn"
+  #timeZone = "Asia/Shanghai"
+  #weight = 131
+  #title = ""
+  #[zh-hans.params]
+    #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+
+[ja]
+  languagename = "日本語"
+  languageflag = "🇯🇵"
+  languagecode = "ja"
+  languagecodecountry = "jp"
+  timeZone = "Asia/Tokyo"
+  weight = 140
+  title = "雪の世界"
+  [ja.params]
+    description = "社会凍結し、分析しました。"     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+  [ja.params.meta]
+    description         = "社会凍結し、分析しました。"
+    author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+  [ja.params.header]
+    navbarTitle         = "雪の世界"
+    dynamicTitles       = false
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+  [ja.params.intro]
+    header                = "雪の世界"
+    paragraph             = "社会凍結し、分析しました。"
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+    [ja.params.intro.pic]
+      src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
+      shape               = "circle"
+      width               = ""
+      alt                 = "雪の世界"
+  [[ja.menu.main]]
+    name              = "ホーム"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+  [[ja.menu.main]]
+    name              = "カテゴリ"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+  [[ja.menu.main]]
+    name              = "タグ"
+    identifier        = "tags"
+    url               = "/tags/"
+    pre               = "<i class='fas fa-tags'></i>"
+    weight            = 6
+  [[ja.menu.main]]
+    name              = "YourOnly.One™"
+    identifier        = "yoo-home"
+    url               = "https://im.youronly.one/ja"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 8
+
+[ko]
+  languagename = "한국어"
+  languageflag = "🇰🇷"
+  languagecode = "ko"
+  languagecodecountry = "kr"
+  timeZone = "Asia/Seoul"
+  weight = 150
+  title = "스노우 월드"
+  [ko.params]
+    description = "사회는 냉동 및 분석."      # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+  [ko.params.meta]
+    description         = "사회는 냉동 및 분석."
+    author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+  [ko.params.header]
+    navbarTitle         = "스노우 월드"
+    dynamicTitles       = false
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+  [ko.params.intro]
+    header                = "스노우 월드"
+    paragraph             = "사회는 냉동 및 분석."
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+    [ko.params.intro.pic]
+      src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
+      shape               = "circle"
+      width               = ""
+      alt                 = "스노우 월드"
+  [[ko.menu.main]]
+    name              = "집"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+  [[ko.menu.main]]
+    name              = "카테고리"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+  [[ko.menu.main]]
+    name              = "태그"
+    identifier        = "tags"
+    url               = "/tags/"
+    pre               = "<i class='fas fa-tags'></i>"
+    weight            = 6
+  [[ko.menu.main]]
+    name              = "YourOnly.One™"
+    identifier        = "yoo-home"
+    url               = "https://im.youronly.one/ko"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 8

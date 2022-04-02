@@ -1,0 +1,5 @@
+images = ["https://rsc.youronly.one/img/y/snoworld-square.webp", "https://rsc.youronly.one/img/y/snoworld-railroad-163518_1280.webp"]
+  [_target]
+    kind = "page"
+    #lang = ""
+    #path = "/blog/**"
