@@ -1,4 +1,4 @@
-module snoworld
+module gitlab.com/youronlyone/site.snoworld
 
 go 1.18
 
