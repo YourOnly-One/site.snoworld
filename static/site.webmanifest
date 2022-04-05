@@ -7,7 +7,7 @@
   "categories": ["books", "entertainment", "lifestyle", "reviews", "social"],
   "display": "minimal-ui",
   "scope": "https://im.youronly.one/snoworld/",
-  "start_url": "https://im.youronly.one",
+  "start_url": "https://im.youronly.one/snoworld/",
   "icons": [
     {
       "src": "https://rsc.YourOnly.One/favicon/snoworld/android-chrome-192x192.png?fmgy=LoveYouTimmie",
