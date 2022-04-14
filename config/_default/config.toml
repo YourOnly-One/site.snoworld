@@ -27,7 +27,7 @@
   refLinksNotFoundURL = "https://im.youronly.one/snoworld/"
 
   ## Dev settings ##
-    publishDir = "../../live/public/snoworld"
+    publishDir = "public"
     enableMissingTranslationPlaceholders = true
 
   ## Other settings ##
