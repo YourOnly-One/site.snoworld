@@ -2,7 +2,7 @@
 disableCSS = false																			# default: false
 disableHTML = false																			# default: false; should be true to keep the casing of hreflang
 disableJS = false																				# default: false
-disableJSON = true																			# default: false
+disableJSON = false																			# default: false
 disableSVG = false																			# default: false
 disableXML = false																			# default: false
 minifyOutput = true																		# default: false
