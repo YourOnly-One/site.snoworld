@@ -1,11 +1,11 @@
 {{ define "main" }}
-  <article data-clarity-region="article">
+  <article class="h-entry" data-clarity-region="article">
     <div class="post">
       {{ .Render "header" }}
       <div id="socnet-share">
         {{ partial "share-buttons" . }}
       </div>
-      <div class="content">
+      <div class="e-content content">
         {{ .Render "featured" }}
         {{ if and (gt .WordCount .Site.Params.tocWords) ( .Site.Params.toc ) }}
           {{ .TableOfContents }}
@@ -39,7 +39,6 @@
       <!-- END: YourOnly.One Head-01-Top -->
     </div>
     {{ if not ( eq .Params.comments false) }}
-      <div id="webmentions"></div>
       {{ .Render "comments" }}
     {{ end }}
   </article>

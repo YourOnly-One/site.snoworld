@@ -6,9 +6,9 @@
 {{- /* YourOnly.One: We already have this
   <meta charset="utf-8">
 */ -}}
-<title>{{ .Title }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
+<title class="p-name">{{ .Title }}{{ if ne .Title .Site.Title }} - {{ .Site.Title }}{{ end }}</title>
 {{- /* YourOnly.One: We already have this
-  <meta name="description" content="{{ .Description | default .Site.Params.meta.description }}">
+  <meta name="description" content="{{ .Description | default .Site.Params.meta.description }}" class="p-summary">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="twitter:card" content="summary_large_image">

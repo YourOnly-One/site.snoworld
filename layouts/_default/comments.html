@@ -1,3 +1,5 @@
+{{ template "_internal/webmention.html" . }}
+<div id="webmentions"></div>
 {{ if .Site.DisqusShortname }}
   <div class='post'>
     {{ template "_internal/disqus.html" . }}

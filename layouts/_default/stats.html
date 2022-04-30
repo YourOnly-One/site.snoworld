@@ -2,7 +2,7 @@
   {{ if .Params.categories }}
     <ul class="categories">
       {{ range ( .GetTerms "categories" ) }}
-        <li><a class="article-terms-link" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        <li><a href="{{ .Permalink }}" class="p-category article-terms-link" rel="category">{{ .LinkTitle }}</a></li>
       {{ end }}
     </ul>
   {{ else if .Site.Params.hideEmptyStats }}
@@ -14,7 +14,7 @@
   {{ if .Params.tags }}
     <ul class="tags">
       {{ range ( .GetTerms "tags" ) }}
-        <li><a class="article-terms-link" href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+        <li><a href="{{ .Permalink }}" class="p-category article-terms-link" rel="tag">{{ .LinkTitle }}</a></li>
       {{ end }}
     </ul>
   {{ else if .Site.Params.hideEmptyStats }}
