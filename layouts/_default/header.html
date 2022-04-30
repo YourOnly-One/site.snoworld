@@ -20,15 +20,15 @@
     {{/* YourOnly.One: replaced {{ with .Params.author }}<p>{{ . }}</p>{{ end }} */}}
     {{ if $frontmatterpersons }}{{ range $i, $frontmatterperson := index $frontmatterpersons }}{{ $dataperson := index $datapersons $frontmatterperson.person }}{{ if $i }}, {{ end }}
       {{- /* note: if [[authors]] is set in frontmatter, use this to display a list of persons with fallback to /data/persons/ if present */}}
-      <p><address class="p-author h-card">{{ with or ($frontmatterperson.url) ($dataperson.url) }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with or ($frontmatterperson.rel) ($dataperson.rel) }} {{ . }}{{ end }}">{{ end }}{{ or ($frontmatterperson.name) ($dataperson.name) }}{{ with or ($frontmatterperson.url) ($dataperson.url) }}</a>{{ end }}</address></p>
+      <address class="p-author h-card"><p>{{ with or ($frontmatterperson.url) ($dataperson.url) }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with or ($frontmatterperson.rel) ($dataperson.rel) }} {{ . }}{{ end }}">{{ end }}{{ or ($frontmatterperson.name) ($dataperson.name) }}{{ with or ($frontmatterperson.url) ($dataperson.url) }}</a>{{ end }}</p></address>
       {{ end }}
     {{ else if $semwebpersons }}{{ range $i, $semwebperson := index $semwebpersons }}{{ $dataperson := index $datapersons $semwebperson.person }}{{ if $i }}, {{ end }}
       {{- /* note: else if [[semweb.persons]] is set in config file, use it to display a list of persons with fallback to /data/persons/ if present */}}
-      <p><address class="p-author h-card">{{ with or ($semwebperson.url) ($dataperson.url) }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with or ($semwebperson.rel) ($dataperson.rel) }} {{ . }}{{ end }}">{{ end }}{{ or ($semwebperson.name) ($dataperson.name) }}{{ with or ($semwebperson.url) ($dataperson.url) }}</a>{{ end }}</address></p>
+      <address class="p-author h-card"><p>{{ with or ($semwebperson.url) ($dataperson.url) }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with or ($semwebperson.rel) ($dataperson.rel) }} {{ . }}{{ end }}">{{ end }}{{ or ($semwebperson.name) ($dataperson.name) }}{{ with or ($semwebperson.url) ($dataperson.url) }}</a>{{ end }}</p></address>
       {{ end }}
     {{ else if .Param "author" }}
       {{- /* note: else if default Hugo 'author' param is used in frontmatter or config, display generic */}}
-      <p><address class="p-author h-card">{{ with .Param "author.url" }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with .Param "author.rel" }} {{ . }}{{ end }}">{{ end }}{{ .Param "author.name" }}{{ with .Param "author.url" }}</a>{{ end }}</address></p>
+      <address class="p-author h-card"><p>{{ with .Param "author.url" }}<a href="{{ . }}" class="u-url p-name" rel="author{{ with .Param "author.rel" }} {{ . }}{{ end }}">{{ end }}{{ .Param "author.name" }}{{ with .Param "author.url" }}</a>{{ end }}</p></address>
     {{ end }}
     {{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
   </div>
