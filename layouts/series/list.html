@@ -2,15 +2,15 @@
   {{/* YourOnly.One: changed */}}
 
   {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
-    <article class="post" data-clarity-region="article">
+    <article class="h-entry post" data-clarity-region="article">
       <div class="post">
         <header>
           <div class="title">
-            <h1>{{ .Title }}</h1>
+            <h1 class="p-name">{{ .Title }}</h1>
           </div>
         </header>
       </div>
-      <div class="content">
+      <div class="e-content content">
         {{ .Content }}
       </div>
     </article>
