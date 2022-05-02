@@ -64,11 +64,11 @@
       </header>
       {{/* YourOnly.One: changed */}}
       {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainTypes) }}
-      <article class="h-entry mini-post" data-clarity-region="article">
+      <article class="mini-post" data-clarity-region="article">
           {{ .Render "featured" }}
         <header>
-          <h2 class="p-name"><a href="{{ .RelPermalink }}" class="u-url" rel="bookmark">{{ .Title }}</a></h2>
-          <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-published published">{{ time.Format $datetimeformat .Date }}</time>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="published">{{ time.Format $datetimeformat .Date }}</time>
         </header>
       </article>
       {{ end }}
