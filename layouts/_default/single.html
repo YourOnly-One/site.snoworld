@@ -2,6 +2,15 @@
   <article>
     <div class="h-entry post" data-clarity-region="article">
       {{ .Render "header" }}
+      <a href="https://keybase.io/yukino" title="@yukino@keybase.io"><img src="https://badgen.net/keybase/pgp/yukino" alt="@yukino@keybase.io" /></a>
+
+      <a href="https://mastodon.social/@youronlyone" title="@youronlyone@mastodon.social"><img src="https://badgen.net/mastodon/follow/youronlyone@mastodon.social?label=Fediverse: Mastodon" alt="@youronlyone@mastodon.social" /></a>
+      <a href="https://twitter.com/YourOnlyONEofcl" title="@YourOnlyONEofcl@twitter.com"><img src="https://badgen.net/twitter/follow/YourOnlyONEofcl?label=Twitter" alt="@YourOnlyONEofcl" /></a>
+      <!--
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" title="Content License: CC-BY-SA 4.0 International" rel="content license external"><img src="https://badgen.net/badge/license/CC-BY-SA%204.0?label=content" /></a>
+      <a href="https://gitlab.com/youronlyone/site.snoworld/-/blob/main/LICENSE" title="Code License: Mozilla Public License 2.0" rel="code license external"><img src="https://badgen.net/badge/license/MPL%202.0?label=code" /></a>
+      -->
+      <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=youronly.one-{{ (urls.Parse .Permalink).Path | replaceRE "/(.*?)/(.*?)/" "$1-$2" }}&text=Readers&style=plastic" alt="Readers" />
       <div id="socnet-share">
         {{ partial "share-buttons" . }}
       </div>
