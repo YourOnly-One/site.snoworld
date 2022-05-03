@@ -26,6 +26,11 @@
           {{- $content := replace .Content $inserthere $joined 1 -}}
           {{ $content | safeHTML }}
         {{- /* END: YourOnly.One: changed */ -}}
+
+        {{ with .Params.syndications }}
+          {{ partial "syndications.html" . }}
+        {{ end }}
+
       </div>
       <footer>
         {{ .Render "stats" }}
