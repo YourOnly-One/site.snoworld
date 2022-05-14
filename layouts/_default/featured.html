@@ -6,6 +6,11 @@
   {{- if .Params.featured -}}
     {{/* YourOnly.One: changed Date format */}}
     {{- $src = (path.Join "img" (cond (eq .Params.featuredpath "date") (.Page.Date.Format "2006-01") (.Params.featuredpath)) .Params.featured) | relURL -}}
+    {{/* BGN: override */}}
+      {{- range first 1 .Params.images -}}
+        {{- $src = . | relURL -}}
+      {{- end -}}
+    {{/* END: override */}}
     {{- $alt = .Params.featuredalt -}}
     {{- with .Params.featuredstretch -}}
       {{- $stretch = . -}}
