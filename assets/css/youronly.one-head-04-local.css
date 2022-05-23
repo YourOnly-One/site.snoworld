@@ -137,12 +137,12 @@ figcaption.attribution_name {
 												"blank main"
 												"footer footer";
 }}
-html > body .nowplayingcard {
+html body .nowplayingcard {
 	--box-shadow-color: rgba(255, 0, 120, 1) !important;
 }
-html > body .nowplayingcard .trackInfo #tracktitle,
-html > body .nowplayingcard .trackInfo #trackalbum,
-html > body .nowplayingcard .trackInfo #trackartist {
+html body .nowplayingcard .trackInfo #tracktitle,
+html body .nowplayingcard .trackInfo #trackalbum,
+html body .nowplayingcard .trackInfo #trackartist {
 	color: rgba(255, 0, 120, 0.7) !important;
 }
 aside.partofseries {
