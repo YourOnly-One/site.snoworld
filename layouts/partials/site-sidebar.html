@@ -21,14 +21,17 @@
       *   - Added trackalbum
       *   - Moved emoji outside of js file into HTML area
       * 2021-01-30: Switched to Emoji instead of icon files
+      * 2022-05-23:
+      *   - Switched to grid layout
+      *   - Switched to ::marker
     --->
     <div class="nowplayingcard">
       <div class="nowplayingcontainer-inner">
         <img id="trackart" src="#">
         <div class="trackInfo">
-          <span class='emoji'>🎧</span><a id="tracktitle"></a><br/>
-          <span class='emoji'>📀</span><a id="trackalbum"></a><br/>
-          <span class='emoji'>🎤</span><a id="trackartist"></a>
+          <div><a id="tracktitle"></a></div>
+          <div><a id="trackalbum"></a></div>
+          <div><a id="trackartist"></a></div>
         </div>
       </div>
     </div>
@@ -66,7 +69,7 @@
           {{ .Render "featured" }}
         <header>
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-          <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="published">{{ time.Format $datetimeformat .Date }}</time>
+          {{ if not .Date.IsZero }}<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="published">{{ time.Format $datetimeformat .Date }}</time>{{ end }}
         </header>
       </article>
       {{ end }}

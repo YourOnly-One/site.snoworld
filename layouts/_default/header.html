@@ -16,7 +16,7 @@
   </div>
   <div class="meta">
     {{/* YourOnly.One: changed */}}
-    <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-published">{{ time.Format $datetimeformat .Date }}</time>
+    {{ if not .Date.IsZero }}<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="dt-published">{{ time.Format $datetimeformat .Date }}</time>{{ end }}
     {{/* YourOnly.One: replaced {{ with .Params.author }}<p>{{ . }}</p>{{ end }} */}}
     {{ if $frontmatterpersons }}{{ range $i, $frontmatterperson := index $frontmatterpersons }}{{ $dataperson := index $datapersons $frontmatterperson.person }}{{ if $i }}, {{ end }}
       {{- /* note: if [[authors]] is set in frontmatter, use this to display a list of persons with fallback to /data/persons/ if present */}}
