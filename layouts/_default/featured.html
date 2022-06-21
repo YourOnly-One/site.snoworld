@@ -5,7 +5,7 @@
   {{- $blur := .Site.Params.removeBlur -}}
   {{- if .Params.featured -}}
     {{/* YourOnly.One: changed Date format */}}
-    {{- $src = (path.Join "img" (cond (eq .Params.featuredpath "date") (.Page.Date.Format "2006-01") (.Params.featuredpath)) .Params.featured) | relURL -}}
+    {{- $src = (path.Join "img" (cond (eq .Params.featuredpath "date") (.Page.PublishDate.Format "2006-01") (.Params.featuredpath)) .Params.featured) | relURL -}}
     {{/* BGN: override */}}
       {{- range first 1 .Params.images -}}
         {{- $src = . | relURL -}}
