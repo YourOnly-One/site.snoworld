@@ -1,7 +1,7 @@
 [hugoVersion]
   extended = true
   #max = ""
-  min = "0.97.0"
+  min = "0.101.0"
 
 [[imports]]
   disable = false                           # default: false
@@ -76,6 +76,21 @@
       target = "content"
       lang = "ko"
   # END: /snoworld/ fill gaps content
+
+
+[[imports]]
+  path = "gitlab.com/youronlyone/images"
+  # BGN: /snoworld/ images
+    [[imports.mounts]]
+      source = "snoworld"
+      target = "assets/images"
+  # END: /snoworld/ images
+
+  # BGN: /love/ images
+    [[imports.mounts]]
+      source = "love"
+      target = "assets/images"
+  # END: /love/ images
 
 
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-mounts
