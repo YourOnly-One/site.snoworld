@@ -10,7 +10,7 @@ googleadsense = "ca-pub-8360283248006398"
 ### BGN: Structured Data ###
 	siteStartYear = 2003
 
-	description = "Society frozen and analysed."
+	description = "Society frozen and analysed"
 	license = "https://im.youronly.one/p/legal-notice/"
 	keywords = ["YourOnly.One", "Yuki", "ᜌᜓᜃᜒ", "Snoworld", "스노우 월드", "雪の世界"] # Can be overriden per page
 	images = ["https://rsc.youronly.one/img/y/snoworld-square.webp", "https://rsc.youronly.one/img/y/snoworld-railroad-163518_1280.webp"]
@@ -34,7 +34,7 @@ googleadsense = "ca-pub-8360283248006398"
 	tocWords              = 400
 
 	[meta]
-		description         = "Society frozen and analysed."
+		description         = "Society frozen and analysed"
 		author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
 		favicon             = false
 		svg                 = true
@@ -43,14 +43,14 @@ googleadsense = "ca-pub-8360283248006398"
 		iOSColor            = "#ffffff"
 
 	[header]
-		navbarTitle         = "Snoworld"
+		navbarTitle         = "Snoworld ❄️"
 		dynamicTitles       = false
 		searchMenu          = true
 		shareMenu           = true
 		languageMenu        = true
 
 	[intro]
-		header                = "Snoworld"
+		header                = "Snoworld ❄️"
 		paragraph             = "Society frozen and analysed"
 		rssIntro              = true
 		socialIntro           = true
@@ -61,7 +61,7 @@ googleadsense = "ca-pub-8360283248006398"
 			src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
 			shape               = "circle"
 			width               = ""
-			alt                 = "Snoworld"
+			alt                 = "Snoworld ❄️"
 
 	[sidebar]
 		#about               = "ABOUT SIDEBAR"

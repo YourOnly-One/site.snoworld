@@ -41,7 +41,7 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[en-ph.menu.main]]
-    name              = "YourOnly.One™"
+    name              = "I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
     url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
@@ -112,11 +112,11 @@
   tzAbbr = "JST"                          # custom
   tzAbbrTitle = "Japan Standard Time"                        # custom
   weight = 140
-  title = "雪の世界"
+  title = "雪の世界 ❄️"
   [ja.params]
-    description = "社会凍結し、分析しました。"     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+    description = "社会凍結し、分析しました"     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
   [ja.params.meta]
-    description         = "社会凍結し、分析しました。"
+    description         = "社会凍結し、分析しました"
     author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
     favicon             = false
     svg                 = true
@@ -131,7 +131,7 @@
     languageMenu        = true
   [ja.params.intro]
     header                = "雪の世界"
-    paragraph             = "社会凍結し、分析しました。"
+    paragraph             = "社会凍結し、分析しました"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
@@ -160,9 +160,9 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[ja.menu.main]]
-    name              = "YourOnly.One™"
+    name              = "I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
-    url               = "https://im.youronly.one/ja"
+    url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
     weight            = 8
 
@@ -176,11 +176,11 @@
   tzAbbr = "KST"                          # custom
   tzAbbrTitle = "Korea Standard Time"                        # custom
   weight = 150
-  title = "스노우 월드"
+  title = "스노우 월드 ❄️"
   [ko.params]
-    description = "사회는 냉동 및 분석."      # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
+    description = "사회는 냉동 및 분석"      # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
   [ko.params.meta]
-    description         = "사회는 냉동 및 분석."
+    description         = "사회는 냉동 및 분석"
     author              = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"
     favicon             = false
     svg                 = true
@@ -195,7 +195,7 @@
     languageMenu        = true
   [ko.params.intro]
     header                = "스노우 월드"
-    paragraph             = "사회는 냉동 및 분석."
+    paragraph             = "사회는 냉동 및 분석"
     rssIntro              = true
     socialIntro           = true
     hideWhenSingleColumn  = false
@@ -224,8 +224,8 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[ko.menu.main]]
-    name              = "YourOnly.One™"
+    name              = "I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
-    url               = "https://im.youronly.one/ko"
+    url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
     weight            = 8
