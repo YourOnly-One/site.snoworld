@@ -53,18 +53,40 @@
       source = "love/en-ph"
       target = "content"
       lang = "en-ph"
-      includeFiles = ["**/20160703-the-choice-2016.md"]
+      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
     [[imports.mounts]]
       source = "love/ja"
       target = "content"
       lang = "ja"
-      includeFiles = ["**/20160703-the-choice-2016.md"]
+      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
     [[imports.mounts]]
       source = "love/ko"
       target = "content"
       lang = "ko"
-      includeFiles = ["**/20160703-the-choice-2016.md"]
+      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
   # END: /love/ content
+
+  # BGN: /yuki/ content
+    #[[imports.mounts]]
+    #  source = "yuki/en-ph"
+    #  target = "content"
+    #  lang = "en"
+    [[imports.mounts]]
+      source = "yuki/en-ph"
+      target = "content"
+      lang = "en-ph"
+      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
+    [[imports.mounts]]
+      source = "yuki/ja"
+      target = "content"
+      lang = "ja"
+      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
+    [[imports.mounts]]
+      source = "yuki/ko"
+      target = "content"
+      lang = "ko"
+      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
+  # END: /yuki/ content
 
   # BGN: /snoworld/ fill gaps content
     [[imports.mounts]]
