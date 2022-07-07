@@ -124,13 +124,13 @@
     msColor             = "#ffffff"
     iOSColor            = "#ffffff"
   [ja.params.header]
-    navbarTitle         = "雪の世界"
+    navbarTitle         = "雪の世界 ❄️"
     dynamicTitles       = false
     searchMenu          = true
     shareMenu           = true
     languageMenu        = true
   [ja.params.intro]
-    header                = "雪の世界"
+    header                = "雪の世界 ❄️"
     paragraph             = "社会凍結し、分析しました"
     rssIntro              = true
     socialIntro           = true
@@ -140,7 +140,7 @@
       src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
       shape               = "circle"
       width               = ""
-      alt                 = "雪の世界"
+      alt                 = "雪の世界 ❄️"
   [[ja.menu.main]]
     name              = "ホーム"
     identifier        = "home"
@@ -188,13 +188,13 @@
     msColor             = "#ffffff"
     iOSColor            = "#ffffff"
   [ko.params.header]
-    navbarTitle         = "스노우 월드"
+    navbarTitle         = "스노우 월드 ❄️"
     dynamicTitles       = false
     searchMenu          = true
     shareMenu           = true
     languageMenu        = true
   [ko.params.intro]
-    header                = "스노우 월드"
+    header                = "스노우 월드 ❄️"
     paragraph             = "사회는 냉동 및 분석"
     rssIntro              = true
     socialIntro           = true
@@ -204,7 +204,7 @@
       src                 = "https://rsc.youronly.one/img/y/snoworld-square.webp"
       shape               = "circle"
       width               = ""
-      alt                 = "스노우 월드"
+      alt                 = "스노우 월드 ❄️"
   [[ko.menu.main]]
     name              = "집"
     identifier        = "home"
