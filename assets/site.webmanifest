@@ -1,9 +1,10 @@
 {{- $androidchrome192png := resources.Get "favicon/android-chrome-192x192.png" | resources.Fingerprint "sha384" -}}
 {{- $androidchrome512png := resources.Get "favicon/android-chrome-512x512.png" | resources.Fingerprint "sha384" -}}
 {
-  "name": "Snoworld",
+  "name": "Snoworld ❄️",
   "short_name": "Snoworld",
-  "description": "Society frozen and analysed.",
+  "description": "Society frozen and analysed",
+  "id": "/snoworld/",
   "dir": "auto",
   "lang": "en-PH",
   "categories": ["books", "entertainment", "lifestyle", "reviews", "social"],
