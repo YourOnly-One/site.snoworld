@@ -4,7 +4,7 @@
     {{ hugo.Generator }}
   */ -}}
   {{ if .Site.Params.enableCDN }}
-    {{- if .Site.Params.highlightjs -}}<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{- end -}}
+    {{- if .Site.Params.highlightjs -}}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ .Site.Params.highlightjsTheme | default "default" }}.min.css">{{- end -}}
     {{- range .Site.Params.cssFiles -}}
       {{- if eq . "default" -}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -33,7 +33,7 @@
         {{- $cssSlice := slice -}}
         {{- if $.Site.Params.highlightjs -}}
           {{ with $.Site.Params.highlightjsTheme }}
-            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ . }}.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/{{ . }}.min.css">
           {{ else }}
             {{- $cssSlice = $cssSlice | append (resources.Get "css/default.css") -}}
           {{ end }}
