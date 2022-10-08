@@ -141,6 +141,9 @@ googleadsense = "ca-pub-8360283248006398"
       #avatar = ""
       #rel = "noopener external nofollow"
 
+  [tools]
+    onesignal = "79058a23-5e2c-4862-926f-37d20de118e5"
+
   [verify]
     flattr = "4j1gl5"
     wot = "06c7ef6e7986586661ef"
