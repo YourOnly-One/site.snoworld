@@ -1,6 +1,6 @@
 module gitlab.com/youronlyone/site.snoworld
 
-go 1.18
+go 1.19
 
 require (
 	github.com/techmagus/hugo-theme-future-imperfect-slim main
