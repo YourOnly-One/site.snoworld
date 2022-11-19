@@ -32,7 +32,7 @@
   # END: /love/ images
 
 [[imports]]
-  path = "codeberg.org/youronlyone/contentnt"
+  path = "codeberg.org/youronlyone/content"
   # BGN: /snoworld/ content
     #[[imports.mounts]]
     #  source = "snoworld/en-ph"
