@@ -41,7 +41,7 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[en-ph.menu.main]]
-    name              = "I'M YourOnly.One 🔏"
+    name              = "♾️ 🐬 I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
     url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
@@ -160,7 +160,7 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[ja.menu.main]]
-    name              = "I'M YourOnly.One 🔏"
+    name              = "♾️ 🐬 I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
     url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
@@ -224,7 +224,7 @@
     pre               = "<i class='fas fa-tags'></i>"
     weight            = 6
   [[ko.menu.main]]
-    name              = "I'M YourOnly.One 🔏"
+    name              = "♾️ 🐬 I'M YourOnly.One 🔏"
     identifier        = "yoo-home"
     url               = "https://im.youronly.one"
     pre               = "<i class='fa fa-home'></i>"
