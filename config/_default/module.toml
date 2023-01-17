@@ -28,6 +28,12 @@ workspace = "off"
       target = "assets/images"
   # END: /love/ images
 
+  # BGN: /yuki/ images
+    [[imports.mounts]]
+      source = "yuki"
+      target = "assets/images"
+  # END: /yuki/ images
+
 [[imports]]
   path = "codeberg.org/youronlyone/content"
   # BGN: /snoworld/ content
