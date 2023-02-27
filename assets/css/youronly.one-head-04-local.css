@@ -1,32 +1,32 @@
 body, input, select, textarea {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 pre {
-  font-family: var(--font-mono-yelosan, monospace);
+  font-family: var(--font-mono-noto, monospace);
 }
 code, kbd, samp {
-  font-family: var(--font-mono-yelosan, monospace);
+  font-family: var(--font-mono-noto, monospace);
 }
 input[type=submit], input[type=reset], input[type=button], .button {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 .meta {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 .stats ul li {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 .nav {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 .mini-post header time {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 .copyright {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 #site-sidebar ul {
-  font-family: var(--font-sans-yelosan, var(--font-hebrew-sans-yelosan, var(--font-baybayin-sans-yelosan, sans-serif)));
+  font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
 }
 
 table>tbody>tr>td:first-child::after {
