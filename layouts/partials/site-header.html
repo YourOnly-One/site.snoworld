@@ -7,7 +7,7 @@
 <header id="site-header">
   <nav id="site-nav">
     <h1 class="nav-title">
-      <a href="{{ "/" | relLangURL }}" class="nav">
+      <a href="{{ site.BaseURL | relLangURL }}" class="nav">
         {{ if or .IsHome (not .Site.Params.header.dynamicTitles) }}
           {{ .Site.Params.header.navbarTitle  | safeHTML }}
         {{ else }}
