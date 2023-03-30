@@ -60,7 +60,7 @@ window.onload = function () {
   $searchInput   = document.getElementById('search-input');
 
   var lang = document.documentElement.lang;
-  var pathArgs = ["{{ replaceRE "/$" "" .Site.BaseURL }}", "index.json"];
+  var pathArgs = ["{{ replaceRE "/$" "" site.BaseURL }}", "index.json"];
   if (lang == "{{ .Language.Params.languagecodehtml }}") {
     // do nothing
   }
@@ -131,7 +131,7 @@ function renderSearchResults(results) {
   if (results.length > 0) {
     results.forEach(function(result) {
       // Create result item
-      container.innerHTML += '<article class="mini-post"><a href="{{ .Site.BaseURL }}' + result.ref + '"><header><h2>' + resultDetails[result.ref].title + '</h2><time class="published" datetime="">' + resultDetails[result.ref].date + '</time></header><main><p>' + resultDetails[result.ref].description + '</p></main></a></article>';
+      container.innerHTML += '<article class="mini-post"><a href="' + result.ref + '"><header><h2>' + resultDetails[result.ref].title + '</h2><time class="published" datetime="">' + resultDetails[result.ref].date + '</time></header><main><p>' + resultDetails[result.ref].description + '</p></main></a></article>';
     });
 
     // Remove any existing content so results aren't continually added as the user types
