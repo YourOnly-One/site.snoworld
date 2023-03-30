@@ -61,7 +61,7 @@ window.onload = function () {
 
   var lang = document.documentElement.lang;
   var pathArgs = ["{{ replaceRE "/$" "" site.BaseURL }}", "index.json"];
-  if (lang == "{{ .Language.Params.languagecodehtml }}") {
+  if (lang == "{{ .Site.Language }}") {
     // do nothing
   }
   else if (lang != "{{ .Site.Language }}") {
