@@ -42,40 +42,40 @@ workspace = "off"
   path = "codeberg.org/youronlyone/content"
   # BGN: /snoworld/ content
     #[[imports.mounts]]
-    #  source = "snoworld/en-ph"
+    #  source = "content/snoworld/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "snoworld/en-ph"
+      source = "content/snoworld/en-ph"
       target = "content"
       lang = "en-ph"
     [[imports.mounts]]
-      source = "snoworld/ja"
+      source = "content/snoworld/ja"
       target = "content"
       lang = "ja"
     [[imports.mounts]]
-      source = "snoworld/ko"
+      source = "content/snoworld/ko"
       target = "content"
       lang = "ko"
   # END: /snoworld/ content
 
   # BGN: /love/ content
     #[[imports.mounts]]
-    #  source = "love/en-ph"
+    #  source = "content/love/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "love/en-ph"
+      source = "content/love/en-ph"
       target = "content"
       lang = "en-ph"
       includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
     [[imports.mounts]]
-      source = "love/ja"
+      source = "content/love/ja"
       target = "content"
       lang = "ja"
       includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
     [[imports.mounts]]
-      source = "love/ko"
+      source = "content/love/ko"
       target = "content"
       lang = "ko"
       includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
@@ -83,21 +83,21 @@ workspace = "off"
 
   # BGN: /yuki/ content
     #[[imports.mounts]]
-    #  source = "yuki/en-ph"
+    #  source = "content/yuki/en-ph"
     #  target = "content"
     #  lang = "en"
     [[imports.mounts]]
-      source = "yuki/en-ph"
+      source = "content/yuki/en-ph"
       target = "content"
       lang = "en-ph"
       includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
     [[imports.mounts]]
-      source = "yuki/ja"
+      source = "content/yuki/ja"
       target = "content"
       lang = "ja"
       includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
     [[imports.mounts]]
-      source = "yuki/ko"
+      source = "content/yuki/ko"
       target = "content"
       lang = "ko"
       includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
@@ -105,11 +105,11 @@ workspace = "off"
 
   # BGN: /snoworld/ fill gaps content
     [[imports.mounts]]
-      source = "snoworld/en-ph"
+      source = "content/snoworld/en-ph"
       target = "content"
       lang = "ja"
     [[imports.mounts]]
-      source = "snoworld/en-ph"
+      source = "content/snoworld/en-ph"
       target = "content"
       lang = "ko"
   # END: /snoworld/ fill gaps content
