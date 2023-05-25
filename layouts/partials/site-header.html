@@ -30,7 +30,7 @@
     </menu>
     {{ if .Site.Params.header.searchMenu }}<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>{{ end }}
     {{ if .Site.Params.header.shareMenu }}<a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>{{ end }}
-    {{ if .Site.Params.header.languageMenu }}<a href="#lang-menu" class="nav lang-toggle" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}">{{ .Site.Language.Params.languageflag }} {{ .Site.Language.LanguageName }}</a>{{ end }}
+    {{ if .Site.Params.header.languageMenu }}<a href="#lang-menu" class="nav lang-toggle" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}">{{ .Site.Params.languageflag }} {{ .Site.Language.LanguageName }}</a>{{ end }}
     <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
   </nav>
   {{ if .Site.Params.header.searchMenu }}<menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>{{ end }}

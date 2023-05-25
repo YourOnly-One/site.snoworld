@@ -61,10 +61,10 @@ window.onload = function () {
 
   var lang = document.documentElement.lang;
   var pathArgs = ["{{ replaceRE "/$" "" site.BaseURL }}", "index.json"];
-  if (lang == "{{ .Site.Language }}") {
+  if (lang == "{{ site.Language }}") {
     // do nothing
   }
-  else if (lang != "{{ .Site.Language }}") {
+  else if (lang != "{{ site.Language }}") {
     pathArgs.splice(1, 0, lang);
   }
   path = pathArgs.join("/");
