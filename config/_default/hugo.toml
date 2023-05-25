@@ -27,7 +27,7 @@
   disableKinds = ["robotsTXT"]
   enableMissingTranslationPlaceholders = true              # default: false
   pluralizeListTitles = false                                # default: true
-  #timeout = "30s"                                           # default: 30s
+  timeout = "70s"                                           # default: 30s
 
   #### Other settings ####
     disqusShortname = "youronlyone"                                    # .Site.DisqusShortname
