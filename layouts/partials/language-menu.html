@@ -2,12 +2,12 @@
   <a href="#" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" class="nav link active" title="{{ .Site.Language.LanguageName }}">{{ .Site.Params.languageflag }} ({{ .Site.Language.LanguageName }})</a>
   {{ if .IsTranslated -}}
     {{ range .Translations }}
-      <a href="{{ .Permalink }}" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" class="nav link" title="{{ .Site.Language.LanguageName }}">{{ .Site.Params.languageflag }} ({{ .Language.LanguageName }})</a>
+      <a href="{{ .Permalink }}" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" class="nav link" title="{{ .Site.Language.LanguageName }}" rel="alternate">{{ .Site.Params.languageFlag }} ({{ .Language.LanguageName }})</a>
     {{ end }}
   {{ else }}
     {{ range .Site.Languages }}
-      {{ if not (eq .Lang $.Site.Language.Lang) }}
-        <span class="nav no-lang link" title="{{ .Params.LanguageName }}">{{ .Params.languageflag }} ({{ .Params.LanguageName }})</span>
+      {{ if ne .Lang $.Site.Language.Lang }}
+        <span class="nav no-lang link" title="{{ .LanguageName }}">{{ $.Site.Params.languageFlag }} ({{ .Params.LanguageName }})</span>
       {{ end }}
     {{ end }}
   {{ end }}
