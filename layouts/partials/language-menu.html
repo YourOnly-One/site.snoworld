@@ -1,8 +1,8 @@
 <menu id="lang-menu" class="flyout-menu menu">
-  <a href="#" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" class="nav link active" title="{{ .Site.Language.LanguageName }}">{{ .Site.Params.languageFlag }} ({{ .Site.Language.LanguageName }})</a>
+  <a href="#" lang="{{ or (.Site.Language.LanguageCode) (.Site.Language.Lang) }}" class="nav link active" title="{{ .Site.Language.LanguageName }}">{{ .Site.Params.languageFlag }} ({{ .Site.Language.LanguageName }})</a>
   {{ if .IsTranslated -}}
     {{ range .Translations }}
-      <a href="{{ .Permalink }}" lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" class="nav link" title="{{ .Site.Language.LanguageName }}" rel="alternate">{{ .Site.Params.languageFlag }} ({{ .Language.LanguageName }})</a>
+      <a href="{{ .Permalink }}" lang="{{ or (.Site.Language.LanguageCode) (.Site.Language.Lang) }}" class="nav link" title="{{ .Site.Language.LanguageName }}" rel="alternate">{{ .Site.Params.languageFlag }} ({{ .Language.LanguageName }})</a>
     {{ end }}
   {{ else }}
     {{ range .Site.Languages }}
