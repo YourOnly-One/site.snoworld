@@ -1,6 +1,10 @@
 # Translations for Hangugeo (Korean)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+# Theme
+[letter_direction]
+  other = "ltr"
+
 # Format
 [date_format]
   other = "2006-01-02"
