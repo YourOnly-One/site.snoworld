@@ -5,6 +5,8 @@ jquerycdn = true
 
 favicon_mstilecolor = "#2d89ef"
 
+disqusShortname = "youronlyone"
+
 ### BGN: Structured Data ###
   siteStartYear = 2003
   description = "Society frozen and analysed"
