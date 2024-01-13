@@ -3,7 +3,7 @@
   <div id="webmentions"></div>
 </div>
 
-{{ if .Params.disqusShortname }}
+{{ if .Site.Config.Services.Disqus.Shortname }}
   <div class='post'>
     {{ template "_internal/disqus.html" . }}
   </div>
