@@ -8,7 +8,7 @@ favicon_mstilecolor = "#2d89ef"
 ### BGN: Structured Data ###
   siteStartYear = 2003
   description = "Society frozen and analysed"
-  keywords = ["Snoworld", "스노우월드", "스노우 월드", "スノーワールド", "雪の世界", "YourOnlyOne", "YourOnly.One", "Yahuhanan Yukiya Sese Cuneta", "Yuki", "YoHan", "Yo-Han", "ᜌᜓᜃᜒ", "사요한", "謝雪矢（ゆきや）", "스노", "Seu-No", "SeuNo", "Snow", "Yohanan", "ᜌᜓᜑᜈᜈ᜔", "ᜌᜓᜑᜈᜈ᜕", "ᜌᜑᜓᜑᜈᜈ᜔", "ᜌᜑᜓᜑᜈᜈ᜕"] # Can be overriden per page
+  keywords = ["Snoworld", "스노우월드", "스노우 월드", "スノーワールド", "雪の世界", "YourOnlyOne", "YourOnly.One", "Yahuhanan Yukiya Sese Cuneta", "Yuki", "YoHan", "Yo-Han",  "יהוחנן", "ᜌᜓᜃᜒ", "사요한", "謝雪矢（ゆきや）", "스노", "Seu-No", "SeuNo", "Snow", "Yohanan", "ᜌᜓᜑᜈᜈ᜔", "ᜌᜓᜑᜈᜈ᜕", "ᜌᜑᜓᜑᜈᜈ᜔", "ᜌᜑᜓᜑᜈᜈ᜕"] # Can be overriden per page
   images = ["https://rsc.youronly.one/img/y/snoworld-square.webp", "https://rsc.youronly.one/img/y/snoworld-railroad-163518_1280.webp"]
 ### END: Structured Data ###
 
