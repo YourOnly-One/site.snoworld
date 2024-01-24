@@ -68,7 +68,7 @@
       <article class="mini-post" data-clarity-region="article">
           {{ .Render "featured" }}
         <header>
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
           {{ if not .PublishDate.IsZero }}<time datetime="{{ .PublishDate.UTC.Format "2006-01-02T15:04:05Z07:00" }}" class="published">{{ time.Format $datetimeformat (.PublishDate.UTC.Add (time.ParseDuration .Site.Params.tzOffset)) }} <abbr{{ with .Site.Params.tzAbbrTitle }} title="{{ printf "%s" . }}"{{ end }}>{{ .Site.Params.tzAbbr }}</abbr></time>{{ end }}
         </header>
       </article>

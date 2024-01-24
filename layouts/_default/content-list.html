@@ -6,7 +6,7 @@
     {{ $.Scratch.Get "summary" | safeHTML }}
   </div>
   <footer>
-    <a href="{{ .RelPermalink }}" class="button big">{{ i18n "read_more" }}</a>
+    <a href="{{ .Permalink }}" class="u-url button big">{{ i18n "read_more" }}</a>
     {{ .Render "stats" }}
   </footer>
 </article>
