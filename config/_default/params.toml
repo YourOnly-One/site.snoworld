@@ -94,6 +94,21 @@ favicon_mstilecolor = "#2d89ef"
 ### END: Theme Settings ###
 
 ### BGN: Other Settings ###
+  ##### BGN: syndication #####
+    #[[sns]]
+    #  url = ''
+    #  icon = 'fediverse.svg'
+    [[sns]]
+      url = 'is.youronly.one'
+      icon = 'bluesky.svg'
+    [[sns]]
+      url = 't.youronly.one'
+      icon = 'tumblr.svg'
+    [[sns]]
+      url = 'youronlyoneofcl.wordpress.com'
+      icon = 'wordpress.svg'
+  ##### END: syndication #####
+
   [semweb]
     datecreated = "2003-12-12"
     isblog = true
