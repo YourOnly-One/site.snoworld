@@ -44,78 +44,40 @@ workspace = "off"
   ignoreImports = true
   path = "codeberg.org/youronlyone/content"
   # BGN: /snoworld/ content
-    #[[imports.mounts]]
-    #  source = "content/snoworld/en-ph"
-    #  target = "content"
-    #  lang = "en"
     [[imports.mounts]]
-      source = "content/snoworld/en-ph"
+      source = "content/snoworld"
       target = "content"
-      lang = "en-ph"
-    [[imports.mounts]]
-      source = "content/snoworld/ja"
-      target = "content"
-      lang = "ja"
-    [[imports.mounts]]
-      source = "content/snoworld/ko"
-      target = "content"
-      lang = "ko"
+      #lang = "en"
   # END: /snoworld/ content
 
   # BGN: /love/ content
-    #[[imports.mounts]]
-    #  source = "content/love/en-ph"
-    #  target = "content"
-    #  lang = "en"
     [[imports.mounts]]
-      source = "content/love/en-ph"
+      source = "content/love"
       target = "content"
-      lang = "en-ph"
-      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
-    [[imports.mounts]]
-      source = "content/love/ja"
-      target = "content"
-      lang = "ja"
-      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
-    [[imports.mounts]]
-      source = "content/love/ko"
-      target = "content"
-      lang = "ko"
-      includeFiles = ["**/20160703-the-choice-2016.md", "**/channels/loverelationships/_index.md"]
+      #lang = "en"
+      includeFiles = ["**/channels/loverelationships/_index.*", "**/20160703-the-choice-2016.*"]
   # END: /love/ content
 
   # BGN: /yuki/ content
-    #[[imports.mounts]]
-    #  source = "content/yuki/en-ph"
-    #  target = "content"
-    #  lang = "en"
     [[imports.mounts]]
-      source = "content/yuki/en-ph"
+      source = "content/yuki"
       target = "content"
-      lang = "en-ph"
-      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
-    [[imports.mounts]]
-      source = "content/yuki/ja"
-      target = "content"
-      lang = "ja"
-      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
-    [[imports.mounts]]
-      source = "content/yuki/ko"
-      target = "content"
-      lang = "ko"
-      includeFiles = ["**/channels/faithfulathlete/_index.md", "**/channels/gameshogun/_index.md"]
+      #lang = "en"
+      includeFiles = ["**/channels/faithfulathlete/_index.*", "**/channels/gameshogun/_index.*"]
   # END: /yuki/ content
 
+
   # BGN: /snoworld/ fill gaps content
-    [[imports.mounts]]
-      source = "content/snoworld/en-ph"
-      target = "content"
-      lang = "ja"
-    [[imports.mounts]]
-      source = "content/snoworld/en-ph"
-      target = "content"
-      lang = "ko"
+    #[[imports.mounts]]
+    #  source = "content/snoworld/en-ph"
+    #  target = "content"
+    #  lang = "ja"
+    #[[imports.mounts]]
+    #  source = "content/snoworld/en-ph"
+    #  target = "content"
+    #  lang = "ko"
   # END: /snoworld/ fill gaps content
+
 
 [[imports]]
   path = "codeberg.org/yelosan/hugo-globals"
@@ -125,7 +87,6 @@ workspace = "off"
 
 [[imports]]
   ignoreConfig = true
-  ignoreImports = false
   path = "github.com/techmagus/hugo-theme-future-imperfect-slim"
 
 
@@ -140,22 +101,9 @@ workspace = "off"
     source = "assets"
     target = "assets"
 
-  #[[mounts]]
-  #  source = "content/en-ph"
-  #  target = "content"
-  #  lang = "en"                                        # when in multihost / multilang mode
   [[mounts]]
-    source = "content/en-ph"
+    source = "content"
     target = "content"
-    lang = "en-ph"                                      # when in multihost / multilang mode
-  [[mounts]]
-    source = "content/ja"
-    target = "content"
-    lang = "ja"                                         # when in multihost / multilang mode
-  [[mounts]]
-    source = "content/ko"
-    target = "content"
-    lang = "ko"                                         # when in multihost / multilang mode
 
   [[mounts]]
     source = "data"
@@ -169,19 +117,6 @@ workspace = "off"
     source = "layouts"
     target = "layouts"
 
-  #[[mounts]]
-  #  source = "static/en-ph"
-  #  target = "static"
-  #  lang = "en"                                        # when in multihost / multilang mode
   [[mounts]]
-    source = "static/en-ph"
+    source = "static"
     target = "static"
-    lang = "en-ph"                                      # when in multihost / multilang mode
-  [[mounts]]
-    source = "static/ja"
-    target = "static"
-    lang = "ja"                                         # when in multihost / multilang mode
-  [[mounts]]
-    source = "static/ko"
-    target = "static"
-    lang = "ko"                                         # when in multihost / multilang mode
