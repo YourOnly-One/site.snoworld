@@ -16,7 +16,7 @@
       <a href="https://github.com/pacollins/hugo-future-imperfect-slim" rel="noopener external">Future Imperfect Slim</a> {{ i18n "themeby" }} <a href="https://github.com/pacollins/hugo-future-imperfect-slim" rel="noopener external">Patrick Collins</a> &amp; <a href="https://html5up.net/future-imperfect" rel="noopener external nofollow">HTML5UP</a>
     </p>
     {{- /*
-    {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " .Site.LastChange.Year " " (.Site.Params.author | default .Site.Title)) }}
+    {{ (.Site.Copyright | safeHTML) | default (print "\u00A9 " .Site.Lastmod.Year " " (.Site.Params.author | default .Site.Title)) }}
       <br>
     {{ i18n "attribution" . | safeHTML }}
     */ -}}
