@@ -12,6 +12,7 @@ input[type=submit], input[type=reset], input[type=button], .button {
 }
 .meta {
   font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
+  line-height: 1.75rem;
 }
 .stats ul li {
   font-family: var(--font-sans-noto, var(--font-hebrew-sans-noto, var(--font-baybayin-sans-noto, sans-serif)));
